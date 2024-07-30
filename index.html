@@ -12,11 +12,11 @@
 
 <body class="bg-green-800">
     <header class="container">
-        <nav class="bg-white fixed w-full z-50 top-0 start-0 border-b border-gray-200">
+        <nav class="bg-white dark:bg-stone fixed w-full z-50 top-0 start-0 border-b border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
                 <h1>
                     <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="./img/logo.png" class="w-48" alt="Logo de The Rolling Stoners">
+                        <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
                     </a>
                 </h1>
                 <div>
@@ -102,12 +102,12 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden ">
                             <div id="slider"
                                 class="h-full flex lg:gap-8 md:gap-6 gap-8 items-center justify-start transition ease-out duration-700">
-                                <div class="flex flex-shrink-0 relative w-auto">
+                                <div class="flex flex-shrink-0 relative w-auto ">
                                     <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
-                                        class="object-cover object-center w-full" />
+                                        class="object-cover object-center w-full " />
                                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
@@ -291,16 +291,19 @@
     </section>
 
     <!-- head coach section -->
-    <section>
-
-        <div class="container mx-auto p-8">
-            <div class="grid grid-cols-12 gap-8">
-                <div class="col-span-12">
+    <section class="headcoach_background">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-12 gap-8 py-8">
+                <div class="col-span-12 flex flex-col justify-between">
                     <h2 class="text-4xl font-bold text-white">Rencontrez notre Head Coach</h2>
-                    <h3 class="text-2xl font-bold text-white mt-4">John Doe</h3>
-                    <p class="text-white mt-2">John Doe est un ceinture noire de Jiu-Jitsu Brésilien. Il a
-                        commencé sa carrière en 2005 et a obtenu sa ceinture noire en 2015. Il a remporté de
-                        nombreux tournois et a formé de nombreux champions. Il a depuis consacré son temps a partager ses conaissances dans plusieurs gym en tant que coach et depuis 2023 dans son propre gym.</p>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mt-4">John Doe</h3>
+                        <p class="text-white mt-2">John Doe est un ceinture noire de Jiu-Jitsu Brésilien. Il a
+                            commencé sa carrière en 2005 et a obtenu sa ceinture noire en 2015. Il a remporté de
+                            nombreux tournois et a formé de nombreux champions. Il a depuis consacré son temps a
+                            partager ses conaissances dans plusieurs gym en tant que coach et depuis 2023 dans son
+                            propre gym.</p>
+                    </div>
                 </div>
 
             </div>
@@ -325,11 +328,9 @@
                     </a>
                 </div>
 
-                <div class="col-span-6 col-start-4">
+                <div class="col-span-8 col-start-3">
                     <a href="#"
                         class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <img class="object-fill w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                            src="img/logo.png" alt="">
                         <div class="flex flex-col justify-between p-4 leading-normal">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Classes
                                 Enfants</h5>
@@ -337,6 +338,8 @@
                                 a vos 6 - 12 ans de découvrir le BJJ tout en s'amusant. Des valeurs telles que le
                                 respect, la maitrise de soi et l'ésprit d'équipe seront abordées.</p>
                         </div>
+                        <img class="object-fill w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                            src="img/logo.png" alt="">
                     </a>
                 </div>
 

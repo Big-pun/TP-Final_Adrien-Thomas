@@ -1,0 +1,6 @@
+.headcoach_background {
+  background-image: url(../../img/headcoach.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
