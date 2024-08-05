@@ -10,9 +10,10 @@
     <title>The Rolling Stoners</title>
 </head>
 
-<body>
+<body class="bg-green-800 dark:bg-gray-900">
     <header class="container mb-36">
-        <nav class="bg-white dark:bg-stone fixed w-full z-50 top-0 start-0 border-b border-gray-200">
+        <nav
+            class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-700">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
                 <h1>
                     <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -22,7 +23,7 @@
                 <div>
                     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                         <button data-collapse-toggle="navbar-sticky" type="button"
-                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 dark:text-gray-400 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700"
                             aria-controls="navbar-sticky" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -35,27 +36,27 @@
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                         id="navbar-sticky">
                         <ul
-                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
                             <li>
                                 <a href="index.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
+                                    class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-green-700 dark:md:hover:text-green-500 md:p-0"
                                     aria-current="page">Accueil</a>
                             </li>
                             <li>
                                 <a href="horaire.html"
-                                    class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-green-700 dark:md:hover:text-green-500 md:p-0">Horaire</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0">Équipe</a>
+                                    class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 dark:md:text-green-500 md:p-0">Équipe</a>
                             </li>
                             <li>
                                 <a href="abonnements.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Abonnements</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-green-700 dark:md:hover:text-green-500 md:p-0">Abonnements</a>
                             </li>
                             <li>
                                 <a href="blogue.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Nouvelles</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 md:hover:bg-transparent md:hover:text-green-700 dark:md:hover:text-green-500 md:p-0">Nouvelles</a>
                             </li>
                         </ul>
                     </div>
@@ -65,21 +66,160 @@
     </header>
 
     <section>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-12 p-8 py-12 gap-8">
 
+                <div class="col-span-6 col-start-4 p-8 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+                    <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white text-center">
+                        L'Équipe dèrriere<br />
+                        <span class="text-green-700 dark:text-green-500">The Rolling Stoners</span>
+                    </h1>
+                    <p class="mt-4 text-center text-gray-500 dark:text-gray-400">Rencontrez les personnes qui
+                        travaillent
+                        dur pour vous offrir la meilleure expérience possible.</p>
+                </div>
+
+                <div
+                    class="col-span-5 col-start-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">John Doe</h5>
+                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture noire</span>
+                        <p class="text-sm text-gray-500 p-2">Fondateur du club, John a remporté l'Or lors de sa participation au championnat du monde IBJJF Master en GI. Il depuis, partage sa passion et ses valeurs du Jiu-Jitsu Brésilien avec sa touche de décontraction et d'humour. John enseigne les classes de Gi et Compétition.</p>
+                        <div class="flex mt-4 md:mt-6">
+                            <a href="#"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Réserver une <br/> classe privée</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture marron</span>
+                        <p class="text-sm text-gray-500 p-2">Bonnie s'entraine depuis une dizaine d'années, elle a
+                            remporté la medaille d'argent en 2019 aux tournoi IBJJF Pan No-Gi. Elle donne les cours de No-Gi régulier et Fondamentaux ainsi que la classe reservée aux femmes.</p>
+                            <div class="flex mt-4 md:mt-6">
+                                <a href="#"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Réserver une <br/> classe privée</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-5 col-start-2 row-start-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Jason Bourne</h5>
+                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture violette</span>
+                        <p class="text-sm text-gray-500 p-2">Bonnie s'entraine depuis une dizaine d'années, elle a
+                            remporté la medaille d'argent en 2019 aux tournoi IBJJF Pan No-Gi. Il donne les cours de Gi Fondamentaux.</p>
+                            <div class="flex mt-4 md:mt-6">
+                                <a href="#"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Réserver une <br/> classe privée</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-5 bg-white row-start-3 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow">
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Esther Jakovich</h5>
+                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture bleue</span>
+                        <p class="text-sm text-gray-500 p-2">Esther s'entraine depuis maintenant 4 ans, elle a gagné plusieurs tournois de la scène locale en No-Gi. Elle donne le cours d'initiation au Jiu-Jitsu Brésilien.</p>
+                        </p>
+                        <div class="flex mt-4 md:mt-6">
+                            <a href="#"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Réserver une <br/> classe privée</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-span-8 col-start-3 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flow-root">
+                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+                                    </div>
+                                    <div class="flex-1 min-w-0 ms-4">
+                                        <p class="text-sm font-medium text-gray-900 dark:text-white">
+                                            Neil Sims
+                                        </p>
+                                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture violette</span>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                                            Neil est un passionné de Jiu-Jitsu Brésilien depuis 2015. Il a remporté plusieurs tournois locaux et donne les classes Enfants.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center ">
+                                    <div class="flex-shrink-0">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
+                                    </div>
+                                    <div class="flex-1 min-w-0 ms-4">
+                                        <p class="text-sm font-medium text-gray-900  dark:text-white">
+                                            George Wish
+                                        </p>
+                                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture marron</span>
+                                        <p class="text-sm text-gray-500  dark:text-gray-400">
+                                            George est le manager du gym, il cotoie John depuis de longues années, il s'occupe du bon fonctionnement du gym et de la gestion des abonnements.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-3 sm:py-4">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0">
+                                        <img class="w-8 h-8 rounded-full"
+                                            src="/docs/images/people/profile-picture-2.jpg" alt="Michael image">
+                                    </div>
+                                    <div class="flex-1 min-w-0 ms-4">
+                                        <p class="text-sm font-medium text-gray-900  dark:text-white">
+                                            Michael Kane
+                                        </p>
+                                        <span class="text-sm mb-1 text-gray-800 dark:text-gray-700">Ceinture violette</span>
+                                        <p class="text-sm text-gray-500  dark:text-gray-400">
+                                            Michael est un ancien halterophile, il a découvert le Jiu-Jitsu Brésilien il y a 3 ans et depuis qu'il a rejoins le gym, a remporté plusieurs tournois locaux. "Mike" s'occupe du programme de force et conditionnement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ 
+
+            </div>
+        </div>
     </section>
 
     <section>
     </section>
 
-    <section>
-    </section>
-
-    <footer>
-        <div class="container bg-white shadow w-full mx-auto md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="https://github.com/Big-pun"
-                    class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="container shadow w-full mx-auto md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400 sm:text-center">© 2024 <a
+                    href="https://github.com/Big-pun" class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
             </span>
-            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">A propos</a>
                 </li>
