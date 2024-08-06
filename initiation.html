@@ -47,7 +47,7 @@
                             </li>
                             <li>
                                 <a href="initiation.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
+                                    class="block py-2 px-3 text-green-700 dark:text-green-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
                                     au BJJ</a>
                             </li>
                             <li>
@@ -91,27 +91,60 @@
 
     <section>
         <div class="container mx-auto">
-            <div class="grid grid-cols-12 p-8">
+            <div class="grid grid-cols-12 p-8 py-12">
                 <div
-                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
-                        <!-- Text Section -->
-                        <div class="flex flex-col items-center text-center">
-                            <h2 class="text-4xl font-bold text-gray-800 mb-4">Initiation au BJJ</h1>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4">Prochaine cours le <span id="nextIntroDate"></span></h3>
-                                <p class="text-gray-600 mb-6">Nottre programme de 4 semaines est désigné pour vous accoutumer aux regles, mouvements et techniques de base.</p>
-                        </div>
+                    class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
+                    <!-- Text Section -->
+                    <div class="flex flex-col items-center text-center">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Initiation au BJJ</h2>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4">Prochain début de programme le<br /><span
+                                id="nextIntroDate"></span></h3>
+                        <p class="text-gray-600">Nottre programme de 4 semaines est désigné pour vous accoutumer
+                            aux regles, mouvements et techniques de base du jiu-jitsu brésilien.</p>
                     </div>
+                    <!-- form d"abonnement a l'initiation -->
+                    <form id="formInitiation" 
+                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6">
+                        <h2 class="text-xl font-bold text-center text-gray-800 mb-4">Apprenez le BJJ, inscrivez vous
+                            aujourd"hui</h2>
+                        <div class="grid grid-cols-12 gap-4">
+                            <div class="col-span-12 sm:col-span-6">
+                                <label for="prenom" class="text-gray-800">Prénom</label>
+                                <input type="text" id="prenom" name="prenom"
+                                    class="w-full p-2 border border-gray-200 rounded-lg">
+                            </div>
+                            <div class="col-span-12 sm:col-span-6">
+                                <label for="nom" class="text-gray-800">Nom</label>
+                                <input type="text" id="nom" name="nom"
+                                    class="w-full p-2 border border-gray-200 rounded-lg">
+                            </div>
+                            <div class="col-span-12 sm:col-span-6">
+                                <label for="email" class="text-gray-800">Courriel</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full p-2 border border-gray-200 rounded-lg">
+                            </div>
+                            <div class="col-span-12 sm:col-span-6">
+                                <label for="telephone" class="text-gray-800">Téléphone</label>
+                                <input type="tel" id="telephone" name="telephone"
+                                    class="w-full p-2 border border-gray-200 rounded-lg">
+                            </div>
+                            <div class="col-span-12">
+                                <button type="submit"
+                                    class="w-full p-2 bg-green-800 text-white rounded-lg">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
     </section>
 
-    <!-- Form d'abonnement -->
-    <section>
+    <section class="bg-white">
         <div class="container mx-auto">
-            <div class="grid grid-cols-12">
-                <form class="col">
+            <div class="grid grid-cols-12 p-8">
+                <div class="col-span-12 ">
 
-                </form>
+                </div>
+
             </div>
         </div>
     </section>
@@ -140,4 +173,5 @@
 </body>
 <script src="scripts/navbar.js"></script>
 <script src="scripts/nextIntroDate.js"></script>
+
 </html>
