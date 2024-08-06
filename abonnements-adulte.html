@@ -46,8 +46,8 @@
                                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
                             </li>
                             <li>
-                                <a href="equipe.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
+                                <a href="initiation.html"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation au BJJ</a>
                             </li>
                             <li>
                                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
@@ -72,6 +72,10 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </li>
+                            <li>
+                                <a href="equipe.html"
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
                             </li>
                             <li>
                                 <a href="blogue.html"
@@ -391,19 +395,199 @@
 
     <!-- Infos abonnements-->
     <section class="bg-white">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-12 p-8">
-                <div class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
-                    <!-- Text Section -->
-                    <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-bold text-gray-800 mb-4">Pourquoi choisir<br /><span
-                                class="text-green-700">nos abonnements</span></h1>
-                            <p class="text-gray-600 mb-6">Choisis la formule qui corresponds a tes attentes</p>
+        <div class="container mx-auto grid grid-cols-12 gap-8">
+            <div class="col-span-10 col-start-2  lg:col-span-5 lg:col-start-2 lg:row-start-2 mt-8 space-y-4 font-noto">
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question1" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Que dois-je apporter pour le cours d'initiation ?</span>
+                        <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Il est recommandé de porter des vêtements de sport confortables, tels que des leggings et/ou shorts et des t-shirts, sans-manches à éviter. Apportez une bouteille d'eau pour rester hydraté.
+                        </p>
                     </div>
                 </div>
-
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question2" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Un projet au long cours</span>
+                        <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer2" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Monia Chokri a commencé à structurer le scénario de Simple comme Sylvain alors
+                            qu'elle terminait son premier long-métrage, La Femme de mon frère, sorti en 2019.
+                            Elle s'est ensuite attelée, tout en se consacrant à sa carrière d'actrice, à
+                            Babysitter, sa deuxième réalisation. "Simple comme Sylvain, ça fait à peu près deux
+                            ans et demi que j’ai vraiment commencé à l’écrire. Je vois ce temps que j’ai pris
+                            comme un allié", confie-t-elle.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question3" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Éviter le cynisme</span>
+                        <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer3" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Monia Chokri a tenu à ne pas tomber dans le cynisme avec Simple comme Sylvain. Sans
+                            renier le ton caustique de La Femme de mon frère, son premier long-métrage, elle a
+                            voulu cette fois privilégier la tendresse envers ses personnages : "C’est un pas que
+                            j’ai fait dont je suis fière".
+                        <p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question4" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Représenter la jeunesse
+                            actuelle</span>
+                        <svg id="arrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer4" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>L'un des personnages du film s'identifie par le pronom neutre "iel". Pour la
+                            réalisatrice, il s'agissait de représenter une réalité qui existe, ainsi qu'une
+                            jeunesse qu'elle qualifie de "forte, curieuse, tolérante". </p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question5" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Diriger sa meilleure amie</span>
+                        <svg id="arrow5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer5" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Le rôle féminin principal est tenu par Magalie Lépine-Blondeau, meilleure amie de
+                            Monia Chokri. Elle jouait déjà dans La Femme de mon frère. La réalisatrice raconte :
+                            "Je suis quand même assez directive, j’aligne les acteurs sur une certaine tonalité,
+                            et on répète beaucoup pendant les tournages. Mais avec Magalie, on a les mêmes
+                            goûts, le travail est facile. Je voulais aussi la laisser assez libre. Au Québec,
+                            c’est une actrice très connue et chevronnée, qui a campé de très grands rôles,
+                            autant au cinéma qu’à la télé ou au théâtre".</p>
+                    </div>
+                </div>
             </div>
-        </div>
+
+
+            <div class="col-span-10 col-start-2 lg:col-span-5 lg:col-start-7 lg:row-start-2 mt-8 space-y-4 ">
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question6" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Une photographie a toute
+                            épreuve</span>
+                        <svg id="arrow6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer6" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>André Turpin a plusieurs cordes à son arc et une carrière riche de nombreuses
+                            productions et collaborations cinématographiques et publicitaires. Il a signé la
+                            direction photo de plusieurs films québécois remarqués, de Incendies de Denis
+                            Villeneuve, à Simple comme Sylvain, plus récent film de Monia Chokri, en passant par
+                            Mommy de Xavier Dolan.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question7" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Récompenses</span>
+                        <svg id="arrow7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer7" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Simple comme Sylvain a obtenu le grand prix du jury et prix de la jeunesse au
+                            Festival du film de Cabourg 2023, le prix du meilleur film étranger aux César 2024.
+                            Egalement selectionné au Festival international du film de Toronto 2023 dans la
+                            section « Centerpiece » et au Festival de Cannes 2023 dans la categorie « Un Certain
+                            Regard ».</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question8" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Peut-on aimer l’Autre, aussi
+                            différent soit-il ?</span>
+                        <svg id="arrow8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer8" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>A cette question, Monia Choukri à répondu : « Je pense qu’on peut aimer l’Autre pour
+                            ce qu’il est. Mais que c’est un grand défi, ça demande de la détermination. Comme
+                            dirait bell hooks, c’est un choix de comprendre l’autre dans sa différence » .</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question9" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Subtil et cru</span>
+                        <svg id="arrow9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer9" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Un autre aspect qui rend Simple comme Sylvain aussi irrésistible réside dans la
+                            décision de prendre le contrepied des conventions de la comédie romantique afin de
+                            mieux détourner et de commenter celles-ci. Le résultat surprend à chaque détour.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question10" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Des dialogues savoureux</span>
+                        <svg id="arrow10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer10" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>En filigrane, la réalisatrice interroge la question de la langue et du langage, au
+                            centre de la fracture entre les deux mondes. "Je veux l'aider à trouver les mots
+                            pour qu'il ait une pensée plus vaste", justifie Sophia, qui reprend sans arrêt
+                            Sylvain sur ses erreurs lexicales.</p>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section>
@@ -432,5 +616,6 @@
     </footer>
 </body>
 <script src="scripts/navbar.js"></script>
+<script src="scripts/faq.js"></script>
 
 </html>
