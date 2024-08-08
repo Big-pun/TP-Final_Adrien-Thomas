@@ -11,7 +11,6 @@ const validateForm = () => {
     let telephoneInput = document.getElementById('telephone');
     let dateDeNaissance = document.getElementById('dateDeNaissance');
     let genreInput = document.getElementById('genre');
-    let isChecked = false;
     let conditionInput = document.getElementById('condition');
    
 
@@ -91,15 +90,9 @@ const validateForm = () => {
         console.log('genre:', genre);
     }
 
-    for (const source of sources) {
-        if (source.checked) {
-            isChecked = true;
-            break;
-        }
-    }
-
+    let sourceChecked = Array.from(sources).some(source => source.checked);
     const sourceContainer = document.querySelector('.source-control');
-    if (!isChecked) {
+    if (!sourceChecked) {
         setErrorFor(sourceContainer, 'Vous devez choisir une source');
         noErrors = false;
     } else {
@@ -112,7 +105,6 @@ const validateForm = () => {
     if (!condition) {
         setErrorFor(conditionContainer, 'Vous devez accepter la condition');
         noErrors = false;
-        console.log('condition:', condition);
     } else {
         setSuccessFor(conditionContainer);
         console.log('condition:', condition);
@@ -124,6 +116,7 @@ const validateForm = () => {
 const setErrorFor = (input, message) => {
     const inputControl = input.parentElement;
     const errorDisplay = inputControl.querySelector('.errorMessage');
+    console.log('message:', message);
 
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
