@@ -405,12 +405,85 @@
                         Veuillez remplir le formulaire ci-dessous pour compléter votre inscription.
                     </p>
                 </div>
-                <form class="mt-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
-                    <input type="text" name="name" id="name" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
-                    <label for="email" class="block mt-4 text-sm font-medium text-gray-700">Email</label>
-                    <input type="email" name="email" id="email" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
-                    <!-- Ajoutez d'autres champs si nécessaire -->
+                <form class="mt-4" novalidate onsubmit="validateForm">
+                    <div class="grid grid-cols-12 gap-4">
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="prenom" class="text-gray-800">Prénom</label>
+                            <input type="text" id="prenom" name="prenom"
+                                class="w-full p-2 border border-gray-200 rounded-lg">
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="nom" class="text-gray-800">Nom</label>
+                            <input type="text" id="nom" name="nom"
+                                class="w-full p-2 border border-gray-200 rounded-lg">
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="email" class="text-gray-800">Courriel</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full p-2 border border-gray-200 rounded-lg">
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="telephone" class="text-gray-800">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone"
+                                class="w-full p-2 border border-gray-200 rounded-lg">
+                        </div>
+
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="date" class="text-gray-800">Date de naissance</label>
+                            <input type="date" id="date" name="date"
+                                class="w-full p-2 border border-gray-200 rounded-lg">
+                        </div>
+
+
+                        <div class="col-span-12 sm:col-span-6">
+                            <label for="genre" class="text-gray-800">Genre</label>
+                            <select id="genre" name="genre" class="w-full p-2 border border-gray-200 rounded-lg">
+                                <option value="homme">Homme</option>
+                                <option value="femme">Femme</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-12">
+                            <label for="source"
+                                class="inline-block text-gray-700 dark:text-gray-300">Comment
+                                avez-vous
+                                entendu parler du gym ?</label>
+                            <div class="flex flex-row justify-around">
+                                <div class="flex items-center mb-4">
+                                    <input id="radio-amis" type="radio" value="amis" name="source"
+                                        class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="radio-amis"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Amis</label>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <input id="radio-reseaux" type="radio" value="reseaux" name="source"
+                                        class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="radio-reseaux"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Réseaux
+                                        sociaux</label>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <input id="radio-publicite" type="radio" value="publicite" name="source"
+                                        class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="radio-publicite"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Publicité</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-12 sm:col-span-10 sm:col-start-2">
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="checkbox" value="accepte" class="sr-only peer">
+                                <div
+                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600">
+                                </div>
+                                <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">J'accepte
+                                    de
+                                    recevoir des messages texte du gym</span>
+                            </label>
+                        </div>
+                    </div>
                     <div class="mt-6 flex justify-end">
                         <button type="button" id="close-modal" class="mr-2 px-4 py-2 bg-gray-500 text-white rounded-md">Annuler</button>
                         <button type="submit" class="px-4 py-2 bg-green-700 text-white rounded-md">S'inscrire</button>
