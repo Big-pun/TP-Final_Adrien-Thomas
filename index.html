@@ -12,7 +12,7 @@
 
 <body class="bg-green-800">
     <header class="container mb-36">
-        <nav class="bg-white dark:bg-stone fixed w-full z-50 top-0 start-0 border-b border-gray-200">
+        <nav class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0 dark">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
                 <h1>
                     <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -35,7 +35,7 @@
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                         id="navbar-sticky">
                         <ul
-                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
                             <li>
                                 <a href="#"
                                     class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0"
@@ -43,35 +43,44 @@
                             </li>
                             <li>
                                 <a href="horaire.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
                             </li>
                             <li>
                                 <a href="initiation.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation au BJJ</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
+                                    au BJJ</a>
                             </li>
                             <li>
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Abonnements <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-                      </svg></button>
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                    class="flex items-center justify-between w-full py-2 px-3 text-gray-700 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto md:dark:hover:text-green-700 dark:focus:text-gray-700 dark:border-gray-700 dark:hover:bg-gray-100 md:dark:hover:bg-transparent">Abonnements
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg></button>
                                 <!-- Dropdown menu -->
-                                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                      <li>
-                                        <a href="abonnements-adulte.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
-                                      </li>
-                                      <li>
-                                        <a href="abonnements-enfants.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
-                                      </li>
+                                <div id="dropdownNavbar"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 dark">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 dark"
+                                        aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="abonnements-adulte.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
+                                        </li>
+                                        <li>
+                                            <a href="abonnements-enfants.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
                                 <a href="equipe.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
                             </li>
                             <li>
                                 <a href="blogue.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Nouvelles</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Nouvelles</a>
                             </li>
                         </ul>
                     </div>
@@ -86,19 +95,21 @@
             <div class="container mx-auto p-8 py-12">
                 <div class="grid grid-cols-12">
                     <div
-                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
+                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                         <!-- Text Section -->
                         <div class="flex flex-col items-center text-center">
-                            <h2 class="text-5xl font-bold text-gray-800 mb-4">Rejoins The Rolling Stoners et Apprends
+                            <h2 class="text-5xl font-bold text-gray-800 dark:text-white mb-4">Rejoins <span
+                                    class="text-green-700">The Rolling Stoners</span> et Apprends
                                 l'Art
                                 du
-                                Jiu-Jitsu dès Aujourd'hui</h1>
-                                <p class="text-gray-600 mb-6">Découvre le BJJ dans une ambiance détendue et amusante.
-                                    Inscris-toi
-                                    dès maintenant pour une expérience unique.</p>
-                                <a href="#signup"
-                                    class=" bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Commence
-                                    ton essai gratuit</a>
+                                Jiu-Jitsu dès Aujourd'hui</h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">Découvre le BJJ dans une ambiance
+                                détendue et amusante.
+                                Inscris-toi
+                                dès maintenant pour une expérience unique.</p>
+                            <a href="abonnements-adulte.html"
+                                class=" bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Commence
+                                ton essai gratuit</a>
                         </div>
                     </div>
                 </div>
@@ -106,13 +117,13 @@
         </section>
 
         <!-- carousel photos du gym -->
-        <section class="bg-white">
+        <section class="bg-white dark:bg-gray-800 dark">
             <div class="container mx-auto p-8">
                 <div class="grid grid-cols-12">
                     <div class="col-span-12 flex items-center justify-center p-12">
-                        <div class=" relative flex items-center justify-center">
+                        <div class=" relative flex items-center justify-center dark">
                             <button aria-label="slide backward"
-                                class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                                class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer dark"
                                 id="prev">
                                 <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -120,50 +131,55 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </button>
-                            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden ">
+
+                            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden dark">
                                 <div id="slider"
                                     class="h-full flex lg:gap-8 md:gap-6 gap-8 items-center justify-start transition ease-out duration-700">
-                                    <div class="flex flex-shrink-0 relative w-auto ">
+                                    <div class="flex flex-shrink-0 relative w-auto dark">
                                         <img src="img/bjj-kids.jpg" alt="Deux pratiquants de BJJ en Gi"
-                                            alt="black chair and white table"
-                                            class="object-cover object-center w-full rounded-lg" />
-                                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg"> 
-                                            <div class="flex h-full items-end pb-6">
-                                                <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                    Classes enfants</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-shrink-0 relative w-auto">
-                                        <img src="./img/bjj-fun.jpg" alt="sitting area"
                                             class="object-cover object-center w-full rounded-lg" />
                                         <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
+                                                    Classes enfants</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-shrink-0 relative w-auto dark">
+                                        <img src="./img/bjj-fun.jpg" alt="sitting area"
+                                            class="object-cover object-center w-full rounded-lg" />
+                                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
+
+                                            <div class="flex h-full items-end pb-6">
+                                                <h3
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Communauté</h3>
                                             </div>
                                         </div>
                                     </div>
+
+
                                     <div class="flex flex-shrink-0 relative w-auto">
                                         <img src="./img/shower-green.jpeg" alt="sitting area"
                                             class="object-cover object-center w-full rounded-lg" />
                                         <div class="bg-gray-900 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Salles de douche</h3>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="flex flex-shrink-0 relative w-auto">
                                         <img src="./img/bjj-women.jpeg" alt="sitting area"
                                             class="object-cover object-center w-full rounded-lg" />
                                         <div class="bg-gray-900 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Classes femmes</h3>
                                             </div>
                                         </div>
@@ -175,7 +191,7 @@
                                         <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -185,11 +201,11 @@
                                             class="object-cover object-center w-full rounded-lg" />
                                         <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <h2
-                                                class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                                class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-400">
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -199,11 +215,11 @@
                                             class="object-cover object-center w-full rounded-lg" />
                                         <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <h2
-                                                class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                                class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-400">
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -213,11 +229,11 @@
                                             class="object-cover object-center w-full rounded-lg" />
                                         <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6 rounded-lg">
                                             <h2
-                                                class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                                class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-00">
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -232,7 +248,7 @@
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -246,7 +262,7 @@
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -260,7 +276,7 @@
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -274,7 +290,7 @@
                                                 Catalog 2</h2>
                                             <div class="flex h-full items-end pb-6">
                                                 <h3
-                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white ">
                                                     Minimal Interior</h3>
                                             </div>
                                         </div>
@@ -312,14 +328,13 @@
                                 partager ses conaissances dans plusieurs gym en tant que coach et depuis 2018 dans son
                                 propre gym.</p>
                         </div>
-
                     </div>
-
                 </div>
+            </div>
         </section>
 
-<!-- Numbers section -->
-        <section class="bg-white">
+        <!-- Numbers section -->
+        <section class="bg-white dark:bg-gray-800">
             <div class="container mx-auto">
                 <div class="grid grid-cols-12">
                     <div class="col-span-10 col-start-2 p-4 rounded-lg md:p-8 dark:bg-gray-800" id="stats"
@@ -356,7 +371,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <!-- Liens en cartes -->
         <section>
@@ -398,15 +413,15 @@
                                     respect, la maitrise de soi et l'ésprit d'équipe seront abordées.
                                 </p>
 
-                            <div class="flex flex-row items-center justify-end py-1 mr-6 text-green-700">
-                                <span class=" font-bold dark:text-gray-400">En savoir plus</span>
-                                <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
+                                <div class="flex flex-row items-center justify-end py-1 mr-6 text-green-700">
+                                    <span class=" font-bold dark:text-gray-400">En savoir plus</span>
+                                    <svg class="w-2.5 h-2.5 ms-2.5 -rotate-90" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
 
@@ -460,8 +475,6 @@
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Chaque premier Samedi du
                                     mois
                                     nous organisons un Quintet avec un autre gym. Venez supporter vos coéquipiers !</p>
-                                </p>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -470,14 +483,15 @@
         </section>
 
         <!-- Newsletter section -->
-        <section class="bg-white">
+        <section class="bg-white dark:bg-gray-800">
             <div class="container mx-auto">
                 <div class="grid grid-cols-12 gap-8 py-4">
-                    <div
-                        class="col-span-8 col-start-3 flex flex-col justify-between rounded-lg shadow-lg p-4 items-center text-center">
-                        <h2 class="text-4xl font-bold text-gray-800">Inscrivez-vous à notre Newsletter</h2>
+                    <div class="col-span-8 col-start-3 flex flex-col justify-between p-4 items-center text-center">
+                        <h2 class="text-4xl font-bold text-gray-800 dark:text-white">Inscrivez-vous à notre Newsletter
+                        </h2>
                         <div>
-                            <p class="text-gray-600 mt-2 max-w-prose">Recevez les dernières nouvelles, mises à jour et
+                            <p class="text-gray-600 dark:text-gray-400  mt-2 max-w-prose">Recevez les dernières
+                                nouvelles, mises à jour et
                                 offres spéciales directement dans votre boîte de réception.</p>
                             <form action="#" method="POST" class="mt-8"
                                 aria-label="Formulaire d'inscription à la newsletter">
@@ -517,8 +531,9 @@
             </ul>
         </div>
     </footer>
+
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/navbar.js"></script>
 </body>
-<script src="scripts/carousel.js"></script>
-<script src="scripts/navbar.js"></script>
 
 </html>

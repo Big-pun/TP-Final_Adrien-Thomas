@@ -96,14 +96,15 @@
                     class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
                     <!-- Text Section -->
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Initiation au BJJ</h2>
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Initiation au <span
+                                class="text-green-700">BJJ</span></h2>
                         <h3 class="text-3xl font-bold text-gray-800 mb-4">Prochain début de programme le<br /><span
-                                id="nextIntroDate"></span></h3>
+                                class="text-green-700" id="nextIntroDate"></span></h3>
                         <p class="text-gray-600">Nottre programme de 4 semaines est désigné pour vous accoutumer
                             aux regles, mouvements et techniques de base du jiu-jitsu brésilien.</p>
                     </div>
                     <!-- form d"abonnement a l'initiation -->
-                    <form id="formInitiation" 
+                    <form id="formInitiation"
                         class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6">
                         <h2 class="text-xl font-bold text-center text-gray-800 mb-4">Apprenez le BJJ, inscrivez vous
                             aujourd"hui</h2>
@@ -128,9 +129,23 @@
                                 <input type="tel" id="telephone" name="telephone"
                                     class="w-full p-2 border border-gray-200 rounded-lg">
                             </div>
+
+                            <div class="col-span-12 sm:col-span-6">
+                                <label for="date" class="text-gray-800">Date de naissance</label>
+                                <input type="date" id="date" name="date"
+                                    class="w-full p-2 border border-gray-200 rounded-lg">
+                            </div>
+
+
+                            <div class="col-span-12">
+                                <label for="message" class="text-gray-800">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full p-2 border border-gray-200 rounded-lg"></textarea>
+                            </div>
+
                             <div class="col-span-12">
                                 <button type="submit"
-                                    class="w-full p-2 bg-green-800 text-white rounded-lg">Envoyer</button>
+                                    class="w-full p-2 bg-green-800 text-white rounded-lg">Inscription</button>
                             </div>
                         </div>
                     </form>
@@ -141,12 +156,34 @@
     <section class="bg-white">
         <div class="container mx-auto">
             <div class="grid grid-cols-12 p-8">
-                <div class="col-span-12 ">
+                <div class="col-span-12 sm:col-start-2 sm:col-span-10 flex flex-col gap-4">
+                    <div class="flex flex-col items-center text-center">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Equipement</h2>
+                        <p class="text-gray-600 ">
+                            Il est recommandé de porter des vêtements de sport confortables, tels que des leggings et/ou
+                            shorts et des t-shirts, sans-manches à éviter. Le retrait des bijoux tels que piercings et
+                            boucles d'oreilles est necessaire à la securité des participants. Apportez une bouteille
+                            d'eau pour rester hydraté.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Groupe</h2>
+                        <p class="text-gray-600">Nous sommes prets a accueillir de nouveaux groupes ou participants solo
+                            au debut de chaque mois. Nous suivons un programme précis qui ne nous permet pas
+                            d'acceuillir de participants en cours de programme.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Qu'est-ce que vous
+                            apprendrez?</h2>
+                        <p class="text-gray-600">Vous apprendrez les techniques de base du jiu-jitsu brésilien, y
+                            compris
+                            les positions, les soumissions et les échappatoires. Vous apprendrez également les règles et
+                            les stratégies qui vous permettront de progresser rapidement.</p>
+                    </div>
 
                 </div>
-
             </div>
-        </div>
     </section>
 
     <footer class="bg-white dark:bg-gray-800">

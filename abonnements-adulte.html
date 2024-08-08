@@ -47,7 +47,8 @@
                             </li>
                             <li>
                                 <a href="initiation.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation au BJJ</a>
+                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
+                                    au BJJ</a>
                             </li>
                             <li>
                                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
@@ -92,14 +93,14 @@
     <section>
 
         <div class="container mx-auto p-8 py-12">
-            <div class="grid grid-cols-12 gap-8 ">
+            <div class="grid grid-cols-12">
                 <div
                     class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
                     <!-- Text Section -->
                     <div class="flex flex-col items-center text-center">
                         <h2 class="text-4xl font-bold text-gray-800 mb-4">Abonnements<br /><span
-                                class="text-green-700">Adultes</span></h1>
-                            <p class="text-gray-600 mb-6">Choisis la formule qui corresponds a tes attentes</p>
+                                class="text-green-700">Adultes</span></h2>
+                        <p class="text-gray-600 mb-6">Choisis la formule qui corresponds a tes attentes</p>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@
                         <span class="text-5xl font-extrabold tracking-tight">0</span>
                         <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400"></span>
                     </div>
-                    <ul role="list" class="space-y-5 my-7">
+                    <ul class="space-y-5 my-7">
                         <li class="flex items-center">
                             <svg class="flex-shrink-0 w-4 h-4 text-green-700 dark:text-green-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -187,7 +188,7 @@
                         <span class="text-5xl font-extrabold tracking-tight">150</span>
                         <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/mois</span>
                     </div>
-                    <ul role="list" class="space-y-5 my-7">
+                    <ul class="space-y-5 my-7">
                         <li class="flex items-center">
                             <svg class="flex-shrink-0 w-4 h-4 text-green-700 dark:text-green-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -243,9 +244,9 @@
                                 classes</span>
                         </li>
                     </ul>
-                    <button type="button"
+                    <a href="initiation.html"
                         class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
-                        cet abonnement</button>
+                        cet abonnement</a>
                 </div>
 
                 <div
@@ -256,7 +257,7 @@
                         <span class="text-5xl font-extrabold tracking-tight">400</span>
                         <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/3 mois</span>
                     </div>
-                    <ul role="list" class="space-y-5 my-7">
+                    <ul class="space-y-5 my-7">
                         <li class="flex items-center">
                             <svg class="flex-shrink-0 w-4 h-4 text-green-700 dark:text-green-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -327,7 +328,7 @@
                         <span class="text-5xl font-extrabold tracking-tight">120</span>
                         <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/ mois</span>
                     </div>
-                    <ul role="list" class="space-y-5 my-7">
+                    <ul class="space-y-5 my-7">
                         <li class="flex items-center">
                             <svg class="flex-shrink-0 w-4 h-4 text-green-700 dark:text-green-500" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -393,6 +394,32 @@
         </div>
     </section>
 
+    <!-- Dialogue form abonnement-->
+    <div id="subscription-modal" class="fixed z-50 inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 hidden">
+        <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+            <div class="p-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Formulaire d'inscription</h3>
+                <div class="mt-2">
+                    <p class="text-sm text-gray-500">
+                        Veuillez remplir le formulaire ci-dessous pour compléter votre inscription.
+                    </p>
+                </div>
+                <form class="mt-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
+                    <input type="text" name="name" id="name" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                    <label for="email" class="block mt-4 text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" name="email" id="email" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
+                    <!-- Ajoutez d'autres champs si nécessaire -->
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" id="close-modal" class="mr-2 px-4 py-2 bg-gray-500 text-white rounded-md">Annuler</button>
+                        <button type="submit" class="px-4 py-2 bg-green-700 text-white rounded-md">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
     <!-- Infos abonnements-->
     <section class="bg-white">
         <div class="container mx-auto grid grid-cols-12 gap-8">
@@ -401,7 +428,8 @@
                     class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
                     <button type="button" id="question1" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Que dois-je apporter pour le cours d'initiation ?</span>
+                        <span class="flex text-lg font-semibold text-black">Que dois-je apporter pour le cours
+                            d'initiation ?</span>
                         <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -409,7 +437,9 @@
                         </svg>
                     </button>
                     <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Il est recommandé de porter des vêtements de sport confortables, tels que des leggings et/ou shorts et des t-shirts, sans-manches à éviter. Apportez une bouteille d'eau pour rester hydraté.
+                        <p>Il est recommandé de porter des vêtements de sport confortables, tels que des leggings et/ou
+                            shorts et des t-shirts, sans-manches à éviter. Apportez une bouteille d'eau pour rester
+                            hydraté.
                         </p>
                     </div>
                 </div>
@@ -492,106 +522,9 @@
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-span-10 col-start-2 lg:col-span-5 lg:col-start-7 lg:row-start-2 mt-8 space-y-4 ">
-                <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
-                    <button type="button" id="question6" data-state="closed"
-                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Une photographie a toute
-                            épreuve</span>
-                        <svg id="arrow6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <div id="answer6" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>André Turpin a plusieurs cordes à son arc et une carrière riche de nombreuses
-                            productions et collaborations cinématographiques et publicitaires. Il a signé la
-                            direction photo de plusieurs films québécois remarqués, de Incendies de Denis
-                            Villeneuve, à Simple comme Sylvain, plus récent film de Monia Chokri, en passant par
-                            Mommy de Xavier Dolan.</p>
-                    </div>
-                </div>
-                <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
-                    <button type="button" id="question7" data-state="closed"
-                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Récompenses</span>
-                        <svg id="arrow7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <div id="answer7" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Simple comme Sylvain a obtenu le grand prix du jury et prix de la jeunesse au
-                            Festival du film de Cabourg 2023, le prix du meilleur film étranger aux César 2024.
-                            Egalement selectionné au Festival international du film de Toronto 2023 dans la
-                            section « Centerpiece » et au Festival de Cannes 2023 dans la categorie « Un Certain
-                            Regard ».</p>
-                    </div>
-                </div>
-                <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
-                    <button type="button" id="question8" data-state="closed"
-                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Peut-on aimer l’Autre, aussi
-                            différent soit-il ?</span>
-                        <svg id="arrow8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <div id="answer8" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>A cette question, Monia Choukri à répondu : « Je pense qu’on peut aimer l’Autre pour
-                            ce qu’il est. Mais que c’est un grand défi, ça demande de la détermination. Comme
-                            dirait bell hooks, c’est un choix de comprendre l’autre dans sa différence » .</p>
-                    </div>
-                </div>
-                <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
-                    <button type="button" id="question9" data-state="closed"
-                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Subtil et cru</span>
-                        <svg id="arrow9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <div id="answer9" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Un autre aspect qui rend Simple comme Sylvain aussi irrésistible réside dans la
-                            décision de prendre le contrepied des conventions de la comédie romantique afin de
-                            mieux détourner et de commenter celles-ci. Le résultat surprend à chaque détour.</p>
-                    </div>
-                </div>
-                <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
-                    <button type="button" id="question10" data-state="closed"
-                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Des dialogues savoureux</span>
-                        <svg id="arrow10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </button>
-                    <div id="answer10" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>En filigrane, la réalisatrice interroge la question de la langue et du langage, au
-                            centre de la fracture entre les deux mondes. "Je veux l'aider à trouver les mots
-                            pour qu'il ait une pensée plus vaste", justifie Sophia, qui reprend sans arrêt
-                            Sylvain sur ses erreurs lexicales.</p>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
-    <section>
-    </section>
 
     <footer class="bg-white dark:bg-gray-800">
         <div class="container shadow w-full mx-auto md:flex md:items-center md:justify-between">
@@ -614,8 +547,8 @@
             </ul>
         </div>
     </footer>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/faq.js"></script>
 </body>
-<script src="scripts/navbar.js"></script>
-<script src="scripts/faq.js"></script>
 
 </html>
