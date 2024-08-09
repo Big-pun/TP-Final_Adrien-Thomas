@@ -162,20 +162,21 @@
                                 <div class="flex flex-row justify-around source-control">
                                     <div class="flex items-center mb-4 ">
                                         <input id="radio-amis" type="radio" value="amis" name="source"
-                                            class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="radio-amis"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Amis</label>
+                                            class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="green-radio"
+                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            Amis</label>
                                     </div>
                                     <div class="flex items-center mb-4">
                                         <input id="radio-reseaux" type="radio" value="reseaux" name="source"
-                                            class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                         <label for="radio-reseaux"
                                             class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Réseaux
                                             sociaux</label>
                                     </div>
                                     <div class="flex items-center mb-4">
                                         <input id="radio-publicite" type="radio" value="publicite" name="source"
-                                            class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                         <label for="radio-publicite"
                                             class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Publicité</label>
                                     </div>
@@ -183,18 +184,19 @@
                                 <div class="errorMessage text-red-600"></div>
                             </div>
 
-                            
-                            <div class="col-span-12 sm:col-span-10 sm:col-start-2 ">
+
+                            <div class="col-span-12 sm:col-span-8 sm:col-start-3 ">
                                 <label class=" items-center cursor-pointer" for="condition">
                                     <div class="condition-control inline-flex">
-                                    <input type="checkbox" value="accepte" name="condition" id="condition"
-                                        class="sr-only peer">
-                                    <div
-                                        class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600">
-                                    </div>
-                                    <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">J'accepte
-                                        de
-                                        recevoir des messages texte du gym</span>
+                                        <input type="checkbox" value="accepte" name="condition" id="condition"
+                                            class="sr-only peer">
+                                        <div
+                                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600">
+                                        </div>
+                                        <span
+                                            class="ms-3 mx-auto text-sm font-medium text-gray-900 dark:text-gray-300">J'accepte
+                                            de
+                                            recevoir des messages texte du gym</span>
                                     </div>
                                     <div class="errorMessage text-red-600"></div>
                                 </label>
@@ -204,7 +206,7 @@
                                 <button type="submit"
                                     class="w-full p-2 bg-green-800 text-white rounded-lg">Inscription</button>
                             </div>
-                            
+
                         </div>
                     </form>
                 </div>
@@ -267,8 +269,9 @@
             </ul>
         </div>
     </footer>
-<script src="scripts/navbar.js"></script>
-<script src="scripts/nextIntroDate.js"></script>
-<script src="scripts/validateForm.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/nextIntroDate.js"></script>
+    <script src="scripts/validateForm.js"></script>
 </body>
+
 </html>
