@@ -80,10 +80,11 @@
         </nav>
     </header>
 
-    <section class="">
-        <div class="container mx-auto p-8 bg-white">
-            <div class="grid grid-cols-12 gap-8">
-                <div class="md:col-span-10 md:col-start-2 col-span-12">
+    <section>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-12 gap-8 bg-white p-8 m-8">
+                <div class="col-span-12">
+                    <h1 class="text-4xl font-bold text-center">Horaire</h1>
                     <table class="w-full table-fixed text-center border-separate border-spacing-2 font-bold">
                         <thead>
                             <tr>
@@ -99,140 +100,267 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th class="font-bold text-center">8:00 - 9:00</th>
+                                <th class="font-bold text-center">8:00</th>
                                 <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">No-Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">No-Gi</td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">9:00 - 10:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border-x p-4"></td>
-                                <td
-                                    class="border p-4 bg-gradient-to-tr from-indigo-300 via-violet-300 to-purple-400 rounded-xl">
-                                    Yoga</td>
+                                <th class="font-bold text-center">9:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-gradient-to-tr from-indigo-300 via-violet-300 to-purple-400 rounded-xl">
+                                    <span class="lg:hidden">🧘</span>
+                                    <span class="hidden lg:inline">Yoga</span>
+                                </td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">10:00 - 11:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-yellow-200 rounded-xl">Kids</td>
-                                <td class="border p-4 bg-gradient-to-br from-rose-200 to-rose-600 rounded-xl">Reservé
-                                    aux femmes</td>
+                                <th class="font-bold text-center">10:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-yellow-200 rounded-xl">
+                                    <span class="lg:hidden">🧒</span>
+                                    <span class="hidden lg:inline">Kids</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-br from-rose-200 to-rose-600 rounded-xl">
+                                    <span class="lg:hidden">👩</span>
+                                    <span class="hidden lg:inline">Reservé aux femmes</span>
+                                </td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">11:00 - 12:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-[url('/img/podium.png')] bg-center bg-contain bg-no-repeat shadow-inner rounded-xl relative">Compétition</td>
+                                <th class="font-bold text-center">11:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-gradient-to-r from-[#C0C0C0] via-[#FFD700] to-[#CD7F32] rounded-xl relative">
+                                    <span class="lg:hidden">🏆</span>
+                                    <span class="hidden lg:inline">Compétition</span>
+                                </td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">12:00 - 13:00</th>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">No-Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">No-Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">No-Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi</td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">12:00</th>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">13:00 - 14:00</th>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">Open Mat</td>
-                                <td
-                                    class="border p-4 bg-gradient-to-b from-red-600 via-yellow-300 to-green-600 rounded-xl">
-                                    Spécial Open Mat
-                                    Rolling Stoners</td>
+                                <th class="font-bold text-center">13:00</th>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl"></td>
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-red-600 via-yellow-300 to-green-600 rounded-xl">
+                                    <span class="lg:hidden">🌿</span>
+                                    <span class="hidden lg:inline">Spécial Open Mat Rolling Stoners</span>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <th class="font-bold text-center">14:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🛠️<br/>🩳</span>
+                                    <span class="hidden lg:inline">No-Gi<br />Fondamentaux</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">14:00 - 15:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-700 rounded-xl">No-Gi<br />Fondamentaux</td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">15:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">15:00 - 16:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">16:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-yellow-200 rounded-xl">
+                                    <span class="lg:hidden">🧒</span>
+                                    <span class="hidden lg:inline">Kids</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border lg:p-4 bg-yellow-200 rounded-xl">
+                                    <span class="lg:hidden">🧒</span>
+                                    <span class="hidden lg:inline">Kids</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">16:00 - 17:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-yellow-200 rounded-xl">Kids</td>
-                                <td class="border-x p-4"></td>
-                                <td class="border p-4 bg-yellow-200 rounded-xl">Kids</td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">17:00</th>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🎓</span>
+                                    <span class="hidden lg:inline">Initiation<br />BJJ</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🛠️🥋</span>
+                                    <span class="hidden lg:inline">Gi<br/>Fondamentaux</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🎓</span>
+                                    <span class="hidden lg:inline">Initiation<br />BJJ</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🛠️🥋</span>
+                                    <span class="hidden lg:inline">Gi<br/>Fondamentaux</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">
+                                    <span class="lg:hidden">🛠️<br/>🩳</span>
+                                    <span class="hidden lg:inline">No-Gi<br />Fondamentaux</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">17:00 - 18:00</th>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-700 rounded-xl">Initiation<br />BJJ</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi<br />Fondamentaux</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">Initiation<br />BJJ</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi<br />Fondamentaux</td>
-                                <td class="border p-4 bg-gradient-to-b from-white to-green-300 rounded-xl">No-Gi<br />Fondamentaux</td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">18:00</th>
+                                <td class="border lg:p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-400 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-500 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-400 rounded-xl">
+                                    <span class="lg:hidden">🥋</span>
+                                    <span class="hidden lg:inline">Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-500 rounded-xl">
+                                    <span class="lg:hidden">🩳</span>
+                                    <span class="hidden lg:inline">No-Gi</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-tr from-black via-teal-950 to-cyan-800 rounded-xl text-white"
+                                    rowspan="3">
+                                    <span class="lg:hidden">🖐️</span>
+                                    <span class="hidden lg:inline">Quintet<br />(Chaque 1er Samedi du mois)</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">18:00 - 19:00</th>
-                                <td class="border p-4 bg-gradient-to-b from-white to-slate-300 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-400 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-500 rounded-xl">No-Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-400 rounded-xl">Gi</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-500 rounded-xl">No-Gi</td>
-                                <td class="border p-4 bg-gradient-to-tr from-black via-teal-950 to-cyan-800 rounded-xl text-white"
-                                    rowspan="3">Quintet<br />(Chaque 1er Samedi du mois)</td>
-                                <td class="border-x p-4"></td>
-                            </tr>
-                            <tr>
-                                <th class="font-bold text-center">19:00 - 20:00</th>
-                                <td class="border p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-300 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-slate-300 to-slate-600 rounded-xl">Open Mat</td>
-                                <td class="border p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">Open Mat</td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">19:00</th>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-200 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-300 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-slate-300 to-slate-600 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border lg:p-4 bg-gradient-to-b from-green-300 to-green-700 rounded-xl">
+                                    <span class="lg:hidden">🤼</span>
+                                    <span class="hidden lg:inline">Open Mat</span>
+                                </td>
+                                <td class="border-x lg:p-4"></td>
 
                             </tr>
                             <tr>
-                                <th class="font-bold text-center">20:00 - 21:00</th>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
-                                <td class="border-x p-4"></td>
+                                <th class="font-bold text-center">20:00</th>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
+                                <td class="border-x lg:p-4"></td>
 
                             </tr>
                         </tbody>
