@@ -197,9 +197,9 @@
                                 compétitions</span>
                         </li>
                     </ul>
-                    <a href="initiation.html"
-                        class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
-                        cet abonnement</a>
+                    <button type="button"
+                        class="choose-subscription text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
+                        cet abonnement</button>
                 </div>
 
                 <div
@@ -307,6 +307,107 @@
                         class="choose-subscription text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
                         cet abonnement</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container mx-auto grid grid-cols-12 gap-8 py-8">
+            <div class="col-span-10 col-start-2  xl:col-span-6 xl:col-start-1 xl:row-start-2 space-y-4 font-noto">
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question1" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Débutants</span>
+                        <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Nous vous recommandons de commencer par le cours d'initiation. Ce cours est conçu pour les
+                            débutants et vous permettra de vous familiariser avec les bases du BJJ.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question2" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Essai gratuit</span>
+                        <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer2" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Notre cours d'essai permet d'essayer l'une de nos classe Gi ou No-Gi <span class="font-bold">(hors programme d'initiation)</span> voir si l'environnement du gym leur plait. Ouvert a tous.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question3" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Hygiène</span>
+                        <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer3" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Nos mats sont lavés et desinféctés après chaque cours. Nous vous demandons de porter des vêtements propres et de veiller a une bonne hygiene corporelle. Les ongles doivent etres coupés courts. Toute personne suspectant une infection de la peau doit cesser de s'entrainer et consulter un médecin rapidement.</p>
+                        <p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-span-10 col-start-2 xl:col-span-6 xl:col-start-7 xl:row-start-2 space-y-4 font-noto">
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question4" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Abonnements</span>
+                        <svg id="arrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer4" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Nos abonnements peuvent etres mis sur pause a tout moment. Si vous etes blessé et que votre abonnement annuel doit etre annulé, veuillez nous fournir un certificat medical.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question5" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Tarifs privilégiés</span>
+                        <svg id="arrow5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer5" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Pour les femmes et les etudiants, nous offrons 25% de réduction sur votre abonnement. Veuillez simplement l'indiquer lors de votre inscription.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    <button type="button" id="question6" data-state="closed"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">Compétition</span>
+                        <svg id="arrow6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer6" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>Si vous désirez participer a des compétitions, faites en part a l'un de nos entraineurs. Nous pourrons alors vous accompagner dans votre préparation sur le mat et en dehors.</p>
             </div>
         </div>
     </section>
