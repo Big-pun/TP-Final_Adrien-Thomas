@@ -11,6 +11,7 @@ const validateForm = () => {
     let telephoneInput = document.getElementById('telephone');
     let dateDeNaissance = document.getElementById('dateDeNaissance');
     let genreInput = document.getElementById('genre');
+    let etudiantRadios = document.getElementsByName('etudiant');
     let conditionInput = document.getElementById('condition');
    
 
@@ -98,6 +99,18 @@ const validateForm = () => {
     } else {
         setSuccessFor(sourceContainer);
         console.log('source:', document.querySelector('input[name="source"]:checked').value);
+    }
+
+    let etudiantChecked = false;
+    etudiantRadios.forEach(radio => {
+        if (radio.checked) {
+            etudiantChecked = true;
+        }
+    });
+
+    if (!etudiantChecked) {
+        setErrorFor(document.querySelector('.etudiant-control'), 'Vous devez choisir une option');
+        noErrors = false;
     }
 
 
