@@ -111,6 +111,9 @@ const validateForm = () => {
     if (!etudiantChecked) {
         setErrorFor(document.querySelector('.etudiant-control'), 'Vous devez choisir une option');
         noErrors = false;
+    } else {
+        setSuccessFor(document.querySelector('.etudiant-control'));
+        console.log('étudiant:', document.querySelector('input[name="etudiant"]:checked').value);
     }
 
 
@@ -150,7 +153,7 @@ const isEmail = (email) => {
 }
 
 const isTelephone = (telephone) => {
-    return /^(\d{3}-\d{3}-\d{4})$/.test(telephone);
+    return /^\d{10}$/.test(telephone);
 }
 
 addEventListener('load', () => {
