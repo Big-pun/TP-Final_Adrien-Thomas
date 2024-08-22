@@ -5,7 +5,10 @@
     background-attachment: fixed;
 
     @media (max-width: 768px) {
-        background-size: auto;
+        background-size: contain;
+        background-position: center;
+        
+        
     }
     
 }
