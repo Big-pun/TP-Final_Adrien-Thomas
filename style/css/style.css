@@ -6,6 +6,6 @@
 }
 @media (max-width: 768px) {
   .headcoach_background {
-    background-size: contain;
+    background-size: auto;
   }
 }
