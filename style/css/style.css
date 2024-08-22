@@ -4,3 +4,8 @@
   background-position: top;
   background-attachment: fixed;
 }
+@media (max-width: 768px) {
+  .headcoach_background {
+    background-size: contain;
+  }
+}

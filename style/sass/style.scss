@@ -3,4 +3,9 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+
+    @media (max-width: 768px) {
+        background-size: contain;
+    }
+    
 }
