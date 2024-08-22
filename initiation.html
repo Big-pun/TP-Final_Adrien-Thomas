@@ -12,127 +12,129 @@
 
 <body class="bg-green-800">
     <header class="container mb-36">
-        <nav class="bg-white dark:bg-stone fixed w-full z-50 top-0 start-0 border-b border-gray-200">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
-                <h1>
-                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
-                    </a>
-                </h1>
-                <div>
-                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button data-collapse-toggle="navbar-sticky" type="button"
-                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                            aria-controls="navbar-sticky" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                        id="navbar-sticky">
-                        <ul
-                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
-                            <li>
-                                <a href="index.html"
-                                    class="block py-2 px-3 text-white bg-gray-900 rounded md:bg-transparent md:text-gray-900 md:p-0"
-                                    aria-current="page">Accueil</a>
-                            </li>
-                            <li>
-                                <a href="horaire.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
-                            </li>
-                            <li>
-                                <a href="initiation.html"
-                                    class="block py-2 px-3 text-green-700 dark:text-green-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
-                                    au BJJ</a>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Abonnements
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                                        aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="abonnements-adulte.html"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
-                                        </li>
-                                        <li>
-                                            <a href="abonnements-enfants.html"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="equipe.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
-                            </li>
-                            <li>
-                                <a href="blogue.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Nouvelles</a>
-                            </li>
-                        </ul>
-                    </div>
+    <nav class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
+            <h1>
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
+                </a>
+            </h1>
+            <div>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="text-2xl flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="horaire.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
+                        </li>
+                        <li>
+                            <a href="initiation.html"
+                                class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0">Initiation
+                                au BJJ</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-700 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto md:dark:hover:text-green-700 dark:focus:text-gray-700 dark:border-gray-700 dark:hover:bg-gray-100 md:dark:hover:bg-transparent">Abonnements
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="abonnements-adulte.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
+                                    </li>
+                                    <li>
+                                        <a href="abonnements-enfants.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="equipe.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
+                        </li>
+                        <li>
+                            <a href="blogue.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Nouvelles</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
 
     <section>
         <div class="container mx-auto">
             <div class="grid grid-cols-12 p-8 py-12">
                 <div
-                    class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
+                    class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                     <!-- Text Section -->
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 mb-4"><span
-                                class="text-green-700">Initiation</span> au BJJ</h2>
-                        <h3 class="text-3xl font-bold text-gray-800 mb-4">Prochain début de programme le<br /><span
-                                class="text-green-700" id="nextIntroDate"></span></h3>
-                        <p class="text-gray-600">Notre programme de 4 semaines est désigné pour vous accoutumer
+                        <h2
+                            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">
+                            <span class="text-green-700">Initiation</span> au BJJ</h2>
+                        <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Prochain début de programme
+                            le<br /><span class="text-green-700" id="nextIntroDate"></span></h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">Notre programme de 4 semaines est désigné pour
+                            vous accoutumer
                             aux regles, mouvements et techniques de base du jiu-jitsu brésilien.</p>
                     </div>
                     <!-- form d"abonnement a l'initiation -->
                     <form id="inscriptionForm" onsubmit="return validateForm()" novalidate
-                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6">
-                        <h2 class="text-xl font-bold text-center text-gray-800 mb-4">Apprenez le BJJ, inscrivez vous
+                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center p-6">
+                        <h2 class="text-xl font-bold text-center text-gray-800 dark:text-white mb-4">Apprenez le BJJ,
+                            inscrivez vous
                             aujourd"hui</h2>
                         <div class="grid grid-cols-12 gap-4">
 
                             <div class="col-span-12 sm:col-span-6 input-control">
-                                <label for="prenom" class="text-gray-800">Prénom</label>
+                                <label for="prenom" class="text-gray-800 dark:text-white">Prénom</label>
                                 <input type="text" id="prenom" name="prenom"
                                     class="w-full p-2 border border-gray-200 rounded-lg">
                                 <div class="errorMessage text-red-600"></div>
                             </div>
 
-                            <div class="col-span-12 sm:col-span-6 input-control">
-                                <label for="nom" class="text-gray-800">Nom</label>
+                            <div class="col-span-12 sm:col-span-6 input-control ">
+                                <label for="nom" class="text-gray-800 dark:text-white">Nom</label>
                                 <input type="text" id="nom" name="nom"
                                     class="w-full p-2 border border-gray-200 rounded-lg">
                                 <div class="errorMessage text-red-600"></div>
                             </div>
 
-                            <div class="col-span-12 sm:col-span-6 input-control">
-                                <label for="email" class="text-gray-800">Courriel</label>
+                            <div class="col-span-12 sm:col-span-6 input-control ">
+                                <label for="email" class="text-gray-800 dark:text-white">Courriel</label>
                                 <input type="email" id="email" name="email"
                                     class="w-full p-2 border border-gray-200 rounded-lg">
                                 <div class="errorMessage text-red-600"></div>
                             </div>
 
-                            <div class="col-span-12 sm:col-span-6 input-control">
-                                <label for="telephone" class="text-gray-800">Téléphone</label>
+                            <div class="col-span-12 sm:col-span-6 input-control ">
+                                <label for="telephone" class="text-gray-800 dark:text-white">Téléphone</label>
                                 <input type="tel" id="telephone" name="telephone"
                                     class="w-full p-2 border border-gray-200 rounded-lg">
                                 <div class="errorMessage text-red-600"></div>
@@ -237,13 +239,13 @@
     </section>
 
     <!-- FAQ section -->
-    <section class="bg-white">
+    <section class="bg-white dark:bg-gray-800">
         <div class="container mx-auto">
             <div class="grid grid-cols-12 p-8">
                 <div class="col-span-12 sm:col-start-3 sm:col-span-8 flex flex-col gap-4">
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Equipement</h2>
-                        <p class="text-gray-600 ">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Equipement</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
                             Il est recommandé de porter des vêtements de sport confortables, tels que des leggings et/ou
                             shorts et des t-shirts, sans-manches à éviter. Le retrait des bijoux tels que piercings et
                             boucles d'oreilles est necessaire à la securité des participants. Apportez une bouteille
@@ -251,16 +253,16 @@
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Groupe</h2>
-                        <p class="text-gray-600">Nous sommes prets a accueillir de nouveaux groupes ou participants solo
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Groupe</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Nous sommes prets a accueillir de nouveaux groupes ou participants solo
                             au debut de chaque mois. Nous suivons un programme précis qui ne nous permet pas
                             d'acceuillir de participants en cours de programme.</p>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 mb-4">Qu'est-ce que vous
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Qu'est-ce que vous
                             apprendrez?</h2>
-                        <p class="text-gray-600">Vous apprendrez les techniques de base du jiu-jitsu brésilien, y
+                        <p class="text-gray-600 dark:text-gray-400">Vous apprendrez les techniques de base du jiu-jitsu brésilien, y
                             compris
                             les positions, les soumissions et les échappatoires. Vous apprendrez également les règles et
                             les stratégies qui vous permettront de progresser rapidement.</p>
