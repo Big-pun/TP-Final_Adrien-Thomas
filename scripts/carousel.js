@@ -1,15 +1,49 @@
-let defaultTransform = 0;
+let currentIndex = 0;
+const slider = document.getElementById("slider");
+const progressBar = document.getElementById('progress-bar');
+const items = slider.children;
+const totalItems = items.length;
+const itemWidth = items[0].offsetWidth;
+let stopBeforeEnd = 0;
+
+function updateStopBeforeEnd() {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+        stopBeforeEnd = 3;
+    } else if (window.matchMedia("(min-width: 768px)").matches) {
+        stopBeforeEnd = 2;
+    } else {
+        stopBeforeEnd = 0;
+    }
+    updateProgressBar();
+    slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
+}
+
+function updateProgressBar() {
+    const progress = (currentIndex / (totalItems - 1 - stopBeforeEnd)) * 100;
+    progressBar.style.width = `${progress}%`;
+}
+
 function goNext() {
-    defaultTransform = defaultTransform - 398;
-    var slider = document.getElementById("slider");
-    if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
+    if (currentIndex < totalItems - 1 - stopBeforeEnd) {
+        currentIndex = (currentIndex + 1) % totalItems;
+        slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
+        updateProgressBar();
+    }
 }
-next.addEventListener("click", goNext);
+
 function goPrev() {
-    var slider = document.getElementById("slider");
-    if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-    else defaultTransform = defaultTransform + 398;
-    slider.style.transform = "translateX(" + defaultTransform + "px)";
+    if (currentIndex > 0) {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
+        updateProgressBar();
+    }
 }
-prev.addEventListener("click", goPrev);
+
+document.getElementById("next").addEventListener("click", goNext);
+document.getElementById("prev").addEventListener("click", goPrev);
+
+// Initialiser la barre de progression et la valeur de stopBeforeEnd
+updateStopBeforeEnd();
+
+// Écouter les changements de taille d'écran
+window.addEventListener('resize', updateStopBeforeEnd);

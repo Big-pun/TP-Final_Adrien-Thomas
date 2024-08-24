@@ -98,7 +98,8 @@
                         class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                         <!-- Text Section -->
                         <div class="flex flex-col items-center text-center">
-                            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">
+                            <h2
+                                class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">
                                 Rejoins <span class="text-green-700">The Rolling Stoners</span> et Apprends
                                 l'Art
                                 du
@@ -119,17 +120,17 @@
         <!-- carousel photos du gym -->
         <section class="bg-white dark:bg-gray-800 dark">
             <div class="container mx-auto p-8">
-                <div class="grid sm:grid-cols-12 grid-cols-1">
+                <div class="grid grid-cols-12">
                     <div class="col-span-12 flex items-center justify-center p-12">
                         <div class=" relative flex items-center justify-center dark">
-                            
+
                             <button aria-label="slide backward"
-                                    class="absolute z-30 left-0 -ml-10 focus:outline-none focus:bg-green-700 focus:ring-2 focus:ring-offset-2 focus:ring-green-400 bg-green-700 dark:hover:bg-green-400 text-white font-bold py-2 px-2 rounded"
-                                    id="prev">
+                                class="absolute z-30 left-0 -ml-10 focus:outline-none focus:bg-green-700 focus:ring-2 focus:ring-offset-2 focus:ring-green-400 bg-green-700 dark:hover:bg-green-400 text-white font-bold py-2 px-2 rounded"
+                                id="prev">
                                 <svg class="dark:text-gray-900" width="16" height="32" viewBox="0 0 8 14" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2"
-                                          stroke-linecap="round" stroke-linejoin="round" />
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </button>
 
@@ -243,16 +244,20 @@
                                 </div>
                             </div>
                             <button aria-label="slide forward"
-                                    class="absolute z-30 right-0 -mr-10 focus:outline-none focus:bg-green-700 focus:ring-2 focus:ring-offset-2 focus:ring-green-400 bg-green-700 dark:hover:bg-green-400 text-white font-bold py-2 px-2 rounded"
-                                    id="next">
+                                class="absolute z-30 right-0 -mr-10 focus:outline-none focus:bg-green-700 focus:ring-2 focus:ring-offset-2 focus:ring-green-400 bg-green-700 dark:hover:bg-green-400 text-white font-bold py-2 px-2 rounded"
+                                id="next">
                                 <svg class="dark:text-gray-900" width="16" height="32" viewBox="0 0 8 14" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2"
-                                          stroke-linecap="round" stroke-linejoin="round" />
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </button>
                         </div>
                     </div>
+                </div>
+                <!-- Barre de progression -->
+                <div class="w-full h-2 bg-gray-300 rounded mt-4 overflow-hidden">
+                    <div class="h-full bg-green-700 transition-all duration-500" id="progress-bar"></div>
                 </div>
             </div>
         </section>
@@ -356,7 +361,8 @@
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Nos classes enfants
                                     permettent
                                     a vos 6 - 12 ans de découvrir le BJJ tout en s'amusant. Des valeurs telles que le
-                                    respect, la maitrise de soi et l'ésprit d'équipe seront abordées. Nos instructeurs qualifiés garantissent un apprentissage sûr et structuré.
+                                    respect, la maitrise de soi et l'ésprit d'équipe seront abordées. Nos instructeurs
+                                    qualifiés garantissent un apprentissage sûr et structuré.
                                 </p>
 
                                 <div class="flex flex-row items-center justify-end py-1 mr-6 text-green-700">
