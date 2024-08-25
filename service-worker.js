@@ -1,11 +1,17 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v3';
+const CACHE_NAME = 'static-cache-v1';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
-    "offline.html",
-    "index.html",
-    "style/styles.css",
-    "img/logo.png",
+    '/',
+    '/index.html',
+    '/styles/main.css',
+    '/scripts/main.js',
+    '/img/icons/196.png',
+    '/img/icons/256.png',
+    '/img/icons/512.png',
+    '/img/screenshots/screenshot-1.png',
+    '/img/screenshots/screenshot-2.png',
+    '/offline.html'
 ];
 
 self.addEventListener('install', (evt) => {

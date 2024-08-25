@@ -26,14 +26,14 @@
     {
       "src": "img/screenshots/screenshot-1.png",
       "type": "image/png",
-      "sizes": "502x523",
+      "sizes": "1424x681",
       "label": "app screenshot",
       "form_factor": "narrow"
     },
     {
       "src": "img/screenshots/screenshot-2.png",
       "type": "image/png",
-      "sizes": "688x523",
+      "sizes": "495x605",
       "label": "app screenshot",
       "form_factor": "wide"
     }
