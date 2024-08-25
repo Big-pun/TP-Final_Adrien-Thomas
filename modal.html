@@ -1,57 +1,57 @@
 <!-- Dialogue form abonnement-->
 <div id="subscription-modal"
     class="fixed flex z-50 inset-0 items-center justify-center bg-gray-900 bg-opacity-75 hidden max-h-full overflow-y-auto">
-    <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+    <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
         <div class="p-6">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Formulaire d'inscription</h3>
-            <div class="mt-2">
-                <p class="text-sm text-gray-500">
+            <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-gray-300 ml-6">Formulaire d'inscription</h3>
+            <div class="mt-2 ml-6">
+                <p class="text-sm text-gray-900 dark:text-gray-300 ">
                     Veuillez remplir le formulaire ci-dessous pour compléter votre inscription.
                 </p>
             </div>
             <form id="inscriptionForm" onsubmit="return validateForm()" novalidate
-                class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6">
-                <h2 class="text-xl font-bold text-center text-gray-800 mb-4">Apprenez le BJJ, inscrivez vous
+                class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center p-6">
+                <h2 class="text-xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">Apprenez le BJJ, inscrivez vous
                     aujourd"hui</h2>
                 <div class="grid grid-cols-12 gap-4">
 
                     <div class="col-span-12 sm:col-span-6 input-control">
-                        <label for="prenom" class="text-gray-800">Prénom</label>
+                        <label for="prenom" class="text-gray-900 dark:text-gray-300">Prénom</label>
                         <input type="text" id="prenom" name="prenom"
                             class="w-full p-2 border border-gray-200 rounded-lg">
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 sm:col-span-6 input-control">
-                        <label for="nom" class="text-gray-800">Nom</label>
+                        <label for="nom" class="text-gray-900 dark:text-gray-300">Nom</label>
                         <input type="text" id="nom" name="nom" class="w-full p-2 border border-gray-200 rounded-lg">
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 sm:col-span-6 input-control">
-                        <label for="email" class="text-gray-800">Courriel</label>
+                        <label for="email" class="text-gray-900 dark:text-gray-300">Courriel</label>
                         <input type="email" id="email" name="email"
                             class="w-full p-2 border border-gray-200 rounded-lg">
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 sm:col-span-6 input-control">
-                        <label for="telephone" class="text-gray-800">Téléphone</label>
+                        <label for="telephone" class="text-gray-900 dark:text-gray-300">Téléphone</label>
                         <input type="tel" id="telephone" name="telephone"
                             class="w-full p-2 border border-gray-200 rounded-lg">
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 sm:col-span-6 input-control">
-                        <label for="dateDeNaissance" class="text-gray-800">Date de naissance</label>
+                        <label for="dateDeNaissance" class="text-gray-900 dark:text-gray-300">Date de naissance</label>
                         <input type="date" id="dateDeNaissance" name="dateDeNaissance"
-                            class="w-full p-2 border border-gray-200 rounded-lg">
+                            class="w-full p-2 border border-gray-200 rounded-lg text-gray-900 dark:text-gray-300">
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 sm:col-span-6 input-control">
-                        <label for="genre" class="text-gray-800">Genre</label>
-                        <select id="genre" name="genre" class="w-full p-2 border border-gray-200 rounded-lg">
+                        <label for="genre" class="text-gray-800 dark:text-gray-300">Genre</label>
+                        <select id="genre" name="genre" class="w-full p-2 border border-gray-200 rounded-lg text-gray-900 dark:text-gray-300">
                             <option value="homme">Homme</option>
                             <option value="femme">Femme</option>
                             <option value="autre">Autre</option>
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="col-span-12 ">
-                        <label for="source" class="inline-block text-gray-700 dark:text-gray-300">Comment
+                        <label for="source" class="inline-block text-gray-900 dark:text-gray-300">Comment
                             avez-vous
                             entendu parler du gym ?</label>
                         <div class="flex flex-row justify-between source-control">
@@ -81,21 +81,21 @@
                                 <input id="radio-publicite" type="radio" value="publicite" name="source"
                                     class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                 <label for="radio-publicite"
-                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Publicité</label>
+                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Publicité</label>
                             </div>
                         </div>
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 ">
-                        <label for="etudiant" class="inline-block text-gray-700 dark:text-gray-300">Etes vous
+                        <label for="etudiant" class="inline-block text-gray-900 dark:text-gray-300 ">Etes vous
                             étudiant?</label>
                         <div class="flex flex-row justify-center etudiant-control">
                             <div class="flex items-center m-4 ">
                                 <input id="etudiant-oui" type="radio" value="oui" name="etudiant"
                                     class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
                                 <label for="etudiant-oui"
-                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Oui</label>
+                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Oui</label>
                             </div>
 
                             <div class="flex items-center m-4">
