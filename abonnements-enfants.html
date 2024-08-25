@@ -12,7 +12,7 @@
 
 <body class="bg-green-800">
     <header class="container mb-36">
-        <nav class="bg-white dark:bg-stone fixed w-full z-50 top-0 start-0 border-b border-gray-200">
+        <nav class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
                 <h1>
                     <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -35,24 +35,24 @@
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                         id="navbar-sticky">
                         <ul
-                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
                             <li>
                                 <a href="index.html"
-                                    class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
                                     aria-current="page">Accueil</a>
                             </li>
                             <li>
                                 <a href="horaire.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
                             </li>
                             <li>
                                 <a href="initiation.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
                                     au BJJ</a>
                             </li>
                             <li>
                                 <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    class="flex items-center justify-between w-full py-2 px-3 text-green-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Abonnements
+                                    class="flex items-center justify-between w-full py-2 px-3 text-green-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-green-700 dark:focus:text-green-700 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Abonnements
                                     <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -60,8 +60,8 @@
                                     </svg></button>
                                 <!-- Dropdown menu -->
                                 <div id="dropdownNavbar"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 dark">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 dark"
                                         aria-labelledby="dropdownLargeButton">
                                         <li>
                                             <a href="abonnements-adulte.html"
@@ -76,11 +76,11 @@
                             </li>
                             <li>
                                 <a href="equipe.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-green-700 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
                             </li>
                             <li>
                                 <a href="blogue.html"
-                                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Contacts</a>
+                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -93,10 +93,11 @@
         <div class="container mx-auto p-8 py-12">
             <div class="grid grid-cols-12">
                 <div
-                    class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white p-6 rounded-lg shadow-lg">
+                    class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                     <!-- Text Section -->
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 mb-4">
+                        <h2
+                            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">
                             Abonnements<br /><span class="text-green-700">Enfants</span></h2>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
         </div>
     </section>
 
-    <section class="bg-white">
+    <section class="bg-white dark:bg-gray-800">
         <div class="container mx-auto">
             <div class="grid grid-cols-12 p-8">
                 <div class="col-span-12 max-w-screen-xl mx-auto">
@@ -124,7 +125,10 @@
                         garantissant une expérience à la fois amusante et formatrice. Rejoignez-nous et voyez vos
                         enfants s'épanouir avec le BJJ !
                     </p>
-                    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Chaque premier Samedi du mois, nous invitons les parents a venir s'entrainer avec leurs enfants. Ensemble, nous jouerons à des jeux, apprendrons le jiu-jitsu, passerons du temps de qualité ensemble et, plus important encore, avoir du fun!</p>
+                    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Chaque premier
+                        Samedi du mois, nous invitons les parents a venir s'entrainer avec leurs enfants. Ensemble, nous
+                        jouerons à des jeux, apprendrons le jiu-jitsu, passerons du temps de qualité ensemble et, plus
+                        important encore, avoir du fun!</p>
                 </div>
             </div>
         </div>
@@ -135,7 +139,7 @@
             <div class="grid grid-cols-12 gap-4 p-8">
                 <div
                     class="flex flex-col justify-between col-span-10 col-start-2 sm:col-span-6 xl:col-span-3 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <h5 class="mb-4 text-center text-xl font-medium text-gray-500 dark:text-gray-400">Essai Gratuit</h5>
+                    <h5 class="mb-4 text-center text-xl font-medium text-gray-500 dark:text-gray-300">Essai Gratuit</h5>
                     <div class="flex items-baseline text-gray-900 dark:text-white">
                         <span class="text-3xl font-semibold">$</span>
                         <span class="text-5xl font-extrabold tracking-tight">0</span>
@@ -168,12 +172,13 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                     </ul>
                     <button type="button"
-                        class="choose-subscription text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
+                        class="choose-subscription  bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Choisir
                         cet abonnement</button>
                 </div>
 
@@ -211,7 +216,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex ">
@@ -220,12 +226,14 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Accompagnement lors de
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement
+                                lors de
                                 compétitions</span>
                         </li>
                     </ul>
                     <button type="button"
-                        class="choose-subscription text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
+                        class="choose-subscription  bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Choisir
                         cet abonnement</button>
                 </div>
 
@@ -263,7 +271,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex ">
@@ -272,12 +281,14 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Accompagnement lors de
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement
+                                lors de
                                 compétitions</span>
                         </li>
                     </ul>
                     <button type="button"
-                        class="choose-subscription text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
+                        class="choose-subscription  bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Choisir
                         cet abonnement</button>
                 </div>
 
@@ -315,7 +326,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex ">
@@ -324,116 +336,141 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 ms-3">Accompagnement lors de
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement
+                                lors de
                                 compétitions</span>
                         </li>
                     </ul>
                     <button type="button"
-                        class="choose-subscription text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choisir
+                        class="choose-subscription  bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Choisir
                         cet abonnement</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white">
+    <section class="bg-white dark:bg-gray-800">
         <div class="container mx-auto grid grid-cols-12 gap-8 py-8">
-            <div class="col-span-10 col-start-2  xl:col-span-6 xl:col-start-1 xl:row-start-2 space-y-4 font-noto">
+            <div class="col-span-10 col-start-2 xl:col-span-6 xl:col-start-1 xl:row-start-2 space-y-4 font-noto">
                 <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question1" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">À partir de quel âge mon enfant peut-il commencer le Jiu-Jitsu ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">À partir de quel âge
+                            mon enfant peut-il commencer le Jiu-Jitsu ?</span>
                         <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            stroke="currentColor" class="w-6 h-6 text-gray-400 dark:text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
                     <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Nos classes de Jiu-Jitsu pour enfants sont ouvertes à partir de 6 ans. Nous adaptons les exercices et les techniques en fonction de l'âge et du niveau de chaque enfant pour assurer une progression sécurisée et amusante.
-                        </p>
+                        <p class="text-gray-900 dark:text-gray-300">Nos classes de Jiu-Jitsu pour enfants sont ouvertes
+                            à partir de 6 ans. Nous adaptons les exercices et les techniques en fonction de l'âge et du
+                            niveau de chaque enfant pour assurer une progression sécurisée et amusante.</p>
                     </div>
                 </div>
+                <!-- Répétez pour les autres questions -->
                 <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question2" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Mon enfant a-t-il besoin d'une expérience préalable ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Mon enfant a-t-il
+                            besoin d'une expérience préalable ?</span>
                         <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            stroke="currentColor" class="w-6 h-6 text-gray-400 dark:text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
                     <div id="answer2" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Non, aucune expérience préalable n'est nécessaire. Nos classes sont conçues pour accueillir les débutants comme les enfants plus avancés. Nous offrons également un programme d'introduction pour les nouveaux venus, afin de les familiariser avec les bases du Jiu-Jitsu.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Non, aucune expérience préalable n'est nécessaire.
+                            Nos classes sont conçues pour accueillir les débutants comme les enfants plus avancés. Nous
+                            offrons également un programme d'introduction pour les nouveaux venus, afin de les
+                            familiariser avec les bases du Jiu-Jitsu.</p>
                     </div>
                 </div>
                 <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question3" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Comment garantissez-vous la sécurité pendant les cours ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Comment
+                            garantissez-vous la sécurité pendant les cours ?</span>
                         <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            stroke="currentColor" class="w-6 h-6 text-gray-400 dark:text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
                     <div id="answer3" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>La sécurité est notre priorité absolue. Nos instructeurs sont formés pour encadrer les enfants de manière sécuritaire et veiller à ce que toutes les techniques soient exécutées de manière contrôlée. Nous utilisons également des tapis de haute qualité pour minimiser les risques de blessures.</p>
-                        <p>
+                        <p class="text-gray-900 dark:text-gray-300">La sécurité est notre priorité absolue. Nos
+                            instructeurs sont formés pour encadrer les enfants de manière sécuritaire et veiller à ce
+                            que toutes les techniques soient exécutées de manière contrôlée. Nous utilisons également
+                            des tapis de haute qualité pour minimiser les risques de blessures.</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-span-10 col-start-2 xl:col-span-6 xl:col-start-7 xl:row-start-2 space-y-4 font-noto">
                 <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question4" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Que doit porter mon enfant pour les cours ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Que doit porter mon
+                            enfant pour les cours ?</span>
                         <svg id="arrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            stroke="currentColor" class="w-6 h-6 text-gray-400 dark:text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
                     <div id="answer4" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Pour les premières classes, un simple survêtement ou un t-shirt et un short suffiront. À long terme, nous vous recommandons d'investir dans un gi (uniforme de Jiu-Jitsu) adapté à la taille de votre enfant, disponible à la vente dans notre gym.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Pour les premières classes, un simple survêtement ou
+                            un t-shirt et un short suffiront. À long terme, nous vous recommandons d'investir dans un gi
+                            (uniforme de Jiu-Jitsu) adapté à la taille de votre enfant, disponible à la vente dans notre
+                            gym.</p>
                     </div>
                 </div>
                 <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question5" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Avez vous des tarifs speciaux pour la famille ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Avez vous des tarifs
+                            speciaux pour la famille ?</span>
                         <svg id="arrow5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            stroke="currentColor" class="w-6 h-6 text-gray-400 dark:text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
                     <div id="answer5" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Si vous souhaitez inscrire plus d'un enfants aux classes, obtenez 50% de rabais sur chaque abonnement. L'abonnement pour les parents ayant des enfants s'entrainants au club beneficie de 25% de réduction.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Si vous souhaitez inscrire plus d'un enfants aux
+                            classes, obtenez 50% de rabais sur chaque abonnement. L'abonnement pour les parents ayant
+                            des enfants s'entrainants au club beneficie de 25% de réduction.</p>
                     </div>
                 </div>
                 <div
-                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50 rounded-lg">
+                    class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question6" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-black">Mon enfant peut-il participer à des compétitions ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Mon enfant peut-il
+                            participer à des compétitions ?</span>
                         <svg id="arrow6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-400">
+                            stroke="currentColor" class="w-6 h-6 text-gray-400 dark:text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg>
                     </button>
                     <div id="answer6" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p>Oui, nous offrons la possibilité de participer à des compétitions adaptées à l'âge et au niveau de votre enfant. Cependant, la participation est toujours volontaire et nous respectons le choix de chaque famille. L'accent est d'abord mis sur l'apprentissage et le plaisir.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Oui, nous offrons la possibilité de participer à des
+                            compétitions adaptées à l'âge et au niveau de votre enfant. Cependant, la participation est
+                            toujours volontaire et nous respectons le choix de chaque famille. L'accent est d'abord mis
+                            sur l'apprentissage et le plaisir.</p>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
 
@@ -445,13 +482,15 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confiance et Discipline à Chaque Cours</h3>
-                                <p class="my-4">"Le Jiu-Jitsu a transformé mon enfant! Non seulement il a gagné en confiance, mais il a aussi appris l'importance de la discipline et du respect. Les entraîneurs sont incroyables avec les enfants, et chaque cours est une aventure éducative et amusante."</p>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confiance et Discipline
+                                    à Chaque Cours</h3>
+                                <p class="my-4">"Le Jiu-Jitsu a transformé mon enfant! Non seulement il a gagné en
+                                    confiance, mais il a aussi appris l'importance de la discipline et du respect. Les
+                                    entraîneurs sont incroyables avec les enfants, et chaque cours est une aventure
+                                    éducative et amusante."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-1.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-1.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Marie Louis</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400 ">Janvier 2023</div>
@@ -461,13 +500,15 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Une Expérience Amusante et Éducative</h3>
-                                <p class="my-4">Mon fils adore venir aux cours de Jiu-Jitsu! Il a développé une meilleure concentration et il s'amuse tout en apprenant des techniques utiles. Les entraîneurs sont patients et savent comment motiver les enfants à donner le meilleur d'eux-mêmes."</p>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Une Expérience Amusante
+                                    et Éducative</h3>
+                                <p class="my-4">Mon fils adore venir aux cours de Jiu-Jitsu! Il a développé une
+                                    meilleure concentration et il s'amuse tout en apprenant des techniques utiles. Les
+                                    entraîneurs sont patients et savent comment motiver les enfants à donner le meilleur
+                                    d'eux-mêmes."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-3.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-3.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Antoine Delarue</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Juin 2022</div>
@@ -477,14 +518,16 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Environnement pour Grandir et S'épanouir
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Environnement pour
+                                    Grandir et S'épanouir
                                 </h3>
-                                <p class="my-4">"Les cours de Jiu-Jitsu pour enfants sont exceptionnels. Mon enfant a gagné en force physique et en confiance, tout en apprenant à gérer les situations difficiles avec calme. Les valeurs inculquées ici vont bien au-delà du sport, c'est un véritable accompagnement pour grandir."</p>
+                                <p class="my-4">"Les cours de Jiu-Jitsu pour enfants sont exceptionnels. Mon enfant a
+                                    gagné en force physique et en confiance, tout en apprenant à gérer les situations
+                                    difficiles avec calme. Les valeurs inculquées ici vont bien au-delà du sport, c'est
+                                    un véritable accompagnement pour grandir."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-2.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-2.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Camille Rigaud</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Juillet 2024
@@ -495,14 +538,16 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Endroit Parfait pour Apprendre et S'amuser
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Endroit Parfait pour
+                                    Apprendre et S'amuser
                                 </h3>
-                                <p class="my-4">"Nous sommes ravis d'avoir inscrit notre fille au Jiu-Jitsu! L'ambiance est positive et encourageante, et elle adore apprendre les nouvelles techniques chaque semaine. C'est un environnement parfait pour développer la discipline et le respect des autres."</p>
+                                <p class="my-4">"Nous sommes ravis d'avoir inscrit notre fille au Jiu-Jitsu! L'ambiance
+                                    est positive et encourageante, et elle adore apprendre les nouvelles techniques
+                                    chaque semaine. C'est un environnement parfait pour développer la discipline et le
+                                    respect des autres."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-4.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-4.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Julien Martin</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Novembre 2023</div>
@@ -518,8 +563,8 @@
 
     <footer class="bg-white dark:bg-gray-800  ">
         <div class="container shadow w-full mx-auto md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="https://github.com/Big-pun"
-                    class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a
+                    href="https://github.com/Big-pun" class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-300 sm:mt-0">
                 <li>
