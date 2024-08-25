@@ -60,7 +60,7 @@
                             <div id="dropdownNavbar"
                                 class="z-10 hidden absolute font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                                    aria-labelledby="dropdownLargeButton">
+                                    aria-labelledby="dropdownNavbar">
                                     <li>
                                         <a href="abonnements-adulte.html"
                                             class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
@@ -98,7 +98,7 @@
                             <span class="text-green-700">Initiation</span> au BJJ
                         </h2>
                         <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Prochain début de programme
-                            le<br /><span class="text-green-700" id="nextIntroDate"></span></h3>
+                            le<br/><span class="text-green-700" id="nextIntroDate"></span></h3>
                         <p class="text-gray-700 dark:text-gray-300 mb-4">Notre programme de 4 semaines est désigné pour
                             vous accoutumer
                             aux regles, mouvements et techniques de base du jiu-jitsu brésilien.</p>
@@ -140,14 +140,14 @@
                             </div>
 
                             <div class="col-span-12 sm:col-span-6 input-control">
-                                <label for="dateDeNaissance" class="text-gray-800">Date de naissance</label>
+                                <label for="dateDeNaissance" class="text-gray-800 dark:text-white">Date de naissance</label>
                                 <input type="date" id="dateDeNaissance" name="dateDeNaissance"
                                     class="w-full p-2 border border-gray-200 rounded-lg">
                                 <div class="errorMessage text-red-600"></div>
                             </div>
 
                             <div class="col-span-12 sm:col-span-6 input-control">
-                                <label for="genre" class="text-gray-800">Genre</label>
+                                <label for="genre" class="text-gray-800 dark:text-white">Genre</label>
                                 <select id="genre" name="genre" class="w-full p-2 border border-gray-200 rounded-lg">
                                     <option value="homme">Homme</option>
                                     <option value="femme">Femme</option>
@@ -157,14 +157,14 @@
                             </div>
 
                             <div class="col-span-12 ">
-                                <label for="source" class="inline-block text-gray-700 dark:text-gray-300">Comment
+                                <div class="inline-block text-gray-700 dark:text-gray-300">Comment
                                     avez-vous
-                                    entendu parler du gym ?</label>
+                                    entendu parler du gym ?</div>
                                 <div class="flex flex-row justify-around source-control">
                                     <div class="flex items-center mb-4 ">
                                         <input id="radio-amis" type="radio" value="amis" name="source"
                                             class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="green-radio"
+                                        <label for="radio-amis"
                                             class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                             Amis</label>
                                     </div>
@@ -186,8 +186,8 @@
                             </div>
 
                             <div class="col-span-12 ">
-                                <label for="etudiant" class="inline-block text-gray-700 dark:text-gray-300">Etes vous
-                                    étudiant?</label>
+                                <div class="inline-block text-gray-700 dark:text-gray-300">Etes vous
+                                    étudiant?</div>
                                 <div class="flex flex-row justify-center etudiant-control">
                                     <div class="flex items-center m-4">
                                         <input id="etudiant-oui" type="radio" value="oui" name="etudiant"
@@ -209,7 +209,7 @@
 
 
                             <div class="col-span-12 sm:col-span-8 sm:col-start-3 ">
-                                <label class=" items-center cursor-pointer" for="condition">
+                                <label class=" items-center cursor-pointer" for="condition"></label>
                                     <div class="condition-control inline-flex">
                                         <input type="checkbox" value="accepte" name="condition" id="condition"
                                             class="sr-only peer">
@@ -222,7 +222,7 @@
                                             recevoir des messages texte du gym</span>
                                     </div>
                                     <div class="errorMessage text-red-600"></div>
-                                </label>
+                                
                             </div>
 
                             <div class="col-span-4 col-start-5">
@@ -285,7 +285,7 @@
                     <div>
                         <iframe class="rounded-lg shadow-lg" width="560" height="315"
                             src="https://www.youtube.com/embed/ljVpQ380ACs?si=wKqUWkXCTO3x6rZ1"
-                            title="YouTube video player" frameborder="0"
+                            title="YouTube video player" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -293,7 +293,7 @@
                     <div>
                         <iframe class="rounded-lg shadow-lg" width="560" height="315"
                             src="https://www.youtube.com/embed/L7EomWW1fIw?si=jx8F72zOM3CERxRO"
-                            title="YouTube video player" frameborder="0"
+                            title="YouTube video player" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
