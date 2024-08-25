@@ -21,7 +21,7 @@
   "start_url": "index.html",
   "background_color": "#000000",
   "display": "standalone",
-  "theme_color": "#DAA520",
+  "theme_color": "#186534",
   "screenshots": [
     {
       "src": "img/screenshots/screenshot.png",
