@@ -19,74 +19,73 @@
                         <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
                     </a>
                 </h1>
-                <div>
-                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button data-collapse-toggle="navbar-sticky" type="button"
-                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                            aria-controls="navbar-sticky" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                        id="navbar-sticky">
-                        <ul
-                            class="text-2xl flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
-                            <li>
-                                <a href="index.html"
-                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
-                                    aria-current="page">Accueil</a>
-                            </li>
-                            <li>
-                                <a href="horaire.html"
-                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
-                            </li>
-                            <li>
-                                <a href="initiation.html"
-                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
-                                    au BJJ</a>
-                            </li>
-                            <li>
-                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    class="flex items-center justify-between w-full py-2 px-3 text-green-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-green-700 dark:focus:text-green-700 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Abonnements
-                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-                                <!-- Dropdown menu -->
-                                <div id="dropdownNavbar"
-                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                                        aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <a href="abonnements-adulte.html"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
-                                        </li>
-                                        <li>
-                                            <a href="abonnements-enfants.html"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="equipe.html"
-                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
-                            </li>
-                            <li>
-                                <a href="blogue.html"
-                                    class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="flex md:order-2 space-x-3 items-center md:space-x-0 rtl:space-x-reverse">
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 self-center"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:block md:w-auto md:order-1"
+                    id="navbar-sticky">
+                    <ul
+                        class="text-2xl flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="horaire.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
+                        </li>
+                        <li>
+                            <a href="initiation.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
+                                au BJJ</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-green-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-green-700 dark:focus:text-green-700 dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Abonnements
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden absolute font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="abonnements-adulte.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
+                                    </li>
+                                    <li>
+                                        <a href="abonnements-enfants.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="equipe.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
+                        </li>
+                        <li>
+                            <a href="blogue.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Contacts</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
+
     </header>
 
     <!-- Pricing section -->
@@ -124,7 +123,7 @@
                             mat du dimanche, une session de jiu-jitsu dans une ambiance détendue et motivante.
                             Inscrivez-vous dès aujourd'hui pour transformer votre routine avec nous !
                         </p>
-                        
+
                 </div>
             </div>
         </div>
@@ -179,7 +178,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex line-through decoration-gray-500">
@@ -188,7 +188,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme de force
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme
+                                de force
                                 et
                                 conditionnement</span>
                         </li>
@@ -198,7 +200,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Acces aux autres
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Acces
+                                aux autres
                                 classes</span>
                         </li>
                     </ul>
@@ -251,7 +255,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex line-through decoration-gray-500">
@@ -260,7 +265,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme de force et
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme
+                                de force et
                                 conditionnement</span>
                         </li>
                         <li class="flex line-through decoration-gray-500">
@@ -269,7 +276,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Acces aux autres
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Acces
+                                aux autres
                                 classes</span>
                         </li>
                     </ul>
@@ -322,7 +331,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex ">
@@ -331,7 +341,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement lors de
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement
+                                lors de
                                 compétitions</span>
                         </li>
                         <li class="flex ">
@@ -340,7 +352,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme de force et
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme
+                                de force et
                                 conditionnement</span>
                         </li>
                     </ul>
@@ -393,7 +407,8 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Suivi
                                 personnalisé</span>
                         </li>
                         <li class="flex ">
@@ -402,7 +417,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement lors de
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Accompagnement
+                                lors de
                                 compétitions</span>
                         </li>
                         <li class="flex ">
@@ -411,7 +428,9 @@
                                 <path
                                     d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                             </svg>
-                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme de force et
+                            <span
+                                class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Programmme
+                                de force et
                                 conditionnement</span>
                         </li>
                     </ul>
@@ -434,7 +453,8 @@
                     class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question1" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Avez un cours spécial debutants ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Avez un cours spécial
+                            debutants ?</span>
                         <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -442,7 +462,9 @@
                         </svg>
                     </button>
                     <div id="answer1" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p class="text-gray-900 dark:text-gray-300">Oui, nous vous recommandons de commencer par le cours d'initiation de 4 semaines. Ce cours est conçu pour les débutants et vous permettra de vous familiariser avec les bases du BJJ.
+                        <p class="text-gray-900 dark:text-gray-300">Oui, nous vous recommandons de commencer par le
+                            cours d'initiation de 4 semaines. Ce cours est conçu pour les débutants et vous permettra de
+                            vous familiariser avec les bases du BJJ.
                         </p>
                     </div>
                 </div>
@@ -450,7 +472,8 @@
                     class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question2" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Puis-je venir faire un essai ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Puis-je venir faire un
+                            essai ?</span>
                         <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -458,15 +481,18 @@
                         </svg>
                     </button>
                     <div id="answer2" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p class="text-gray-900 dark:text-gray-300">Oui, nous proposons des séances d’essai gratuites <span
-                            class="font-bold">(hors programme d'initiation)</span> pour les nouveaux membres afin que vous puissiez découvrir nos installations et la qualité de nos cours avant de vous engager. </p>
+                        <p class="text-gray-900 dark:text-gray-300">Oui, nous proposons des séances d’essai gratuites
+                            <span class="font-bold">(hors programme d'initiation)</span> pour les nouveaux membres afin
+                            que vous puissiez découvrir nos installations et la qualité de nos cours avant de vous
+                            engager. </p>
                     </div>
                 </div>
                 <div
                     class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question3" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Quels sont les horaires des cours de BJJ ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Quels sont les
+                            horaires des cours de BJJ ?</span>
                         <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -474,7 +500,9 @@
                         </svg>
                     </button>
                     <div id="answer3" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p class="text-gray-900 dark:text-gray-300">Retrouvez le planning de la semaine avec horaire sur <a href="horaire.html" class="font-bold underline">la page dediée</a>. Surveillez nos réseaux pour les dernieres nouvelles.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Retrouvez le planning de la semaine avec horaire sur
+                            <a href="horaire.html" class="font-bold underline">la page dediée</a>. Surveillez nos
+                            réseaux pour les dernieres nouvelles.</p>
                         <p>
                     </div>
                 </div>
@@ -485,7 +513,8 @@
                     class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question4" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Que faire si je dois suspendre mon abonnement temporairement ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Que faire si je dois
+                            suspendre mon abonnement temporairement ?</span>
                         <svg id="arrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -493,14 +522,17 @@
                         </svg>
                     </button>
                     <div id="answer4" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p class="text-gray-900 dark:text-gray-300">Nous comprenons que des situations imprévues peuvent survenir. Nous offrons la possibilité de suspendre votre abonnement a tout moment pour une durée déterminée.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Nous comprenons que des situations imprévues peuvent
+                            survenir. Nous offrons la possibilité de suspendre votre abonnement a tout moment pour une
+                            durée déterminée.</p>
                     </div>
                 </div>
                 <div
                     class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question5" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Offrez vous des tarifs privilégiés ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Offrez vous des tarifs
+                            privilégiés ?</span>
                         <svg id="arrow5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -508,7 +540,8 @@
                         </svg>
                     </button>
                     <div id="answer5" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p class="text-gray-900 dark:text-gray-300">Pour les femmes et les etudiants, nous offrons 25% de réduction sur votre abonnement.
+                        <p class="text-gray-900 dark:text-gray-300">Pour les femmes et les etudiants, nous offrons 25%
+                            de réduction sur votre abonnement.
                             Veuillez simplement l'indiquer lors de votre inscription.</p>
                     </div>
                 </div>
@@ -516,7 +549,8 @@
                     class="transition-all duration-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 shadow-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 rounded-lg">
                     <button type="button" id="question6" data-state="closed"
                         class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Participez vous a des compétitions ?</span>
+                        <span class="flex text-lg font-semibold text-gray-900 dark:text-gray-300">Participez vous a des
+                            compétitions ?</span>
                         <svg id="arrow6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" class="w-6 h-6 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -524,12 +558,15 @@
                         </svg>
                     </button>
                     <div id="answer6" style="display:none" class="px-4 pb-5 sm:px-6 sm:pb-6">
-                        <p class="text-gray-900 dark:text-gray-300">Nous encourageons nos membres a participer a des competitions. Faites nous en part et nos coach pourrons vous aider dans votre démarche. Nous organisons aussi un Quintet chaque premier Samedi du mois, parlez en aux entraineurs si vous voulez participer.</p>
+                        <p class="text-gray-900 dark:text-gray-300">Nous encourageons nos membres a participer a des
+                            competitions. Faites nous en part et nos coach pourrons vous aider dans votre démarche. Nous
+                            organisons aussi un Quintet chaque premier Samedi du mois, parlez en aux entraineurs si vous
+                            voulez participer.</p>
                     </div>
                 </div>
     </section>
 
-<!-- Commentaires -->
+    <!-- Commentaires -->
     <section>
         <div class="container mx-auto">
             <div class="grid grid-cols-12">
@@ -538,13 +575,16 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confiance et Discipline à Chaque Cours</h3>
-                                <p class="my-4">"Avant de rejoindre les classes régulières, j'ai suivi le programme d'introduction. C'était une excellente manière de me familiariser avec les bases du Jiu-Jitsu. Les instructeurs étaient très patients et prenaient le temps de s'assurer que nous comprenions bien chaque technique. Cela m'a donné la confiance nécessaire pour rejoindre les classes régulières.</p>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Confiance et Discipline
+                                    à Chaque Cours</h3>
+                                <p class="my-4">"Avant de rejoindre les classes régulières, j'ai suivi le programme
+                                    d'introduction. C'était une excellente manière de me familiariser avec les bases du
+                                    Jiu-Jitsu. Les instructeurs étaient très patients et prenaient le temps de s'assurer
+                                    que nous comprenions bien chaque technique. Cela m'a donné la confiance nécessaire
+                                    pour rejoindre les classes régulières.</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-1.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-1.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Sophie Girard</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400 ">Aout 2023</div>
@@ -554,13 +594,15 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Une Expérience Amusante et Éducative</h3>
-                                <p class="my-4">Ce qui distingue ce gym et les autres, c'est la qualité technique des cours. Chaque session est une opportunité d'apprendre quelque chose de nouveau, même pour les pratiquants plus avancés. J'ai vraiment senti une progression dans mon Jiu-Jitsu depuis que j'ai rejoint cette école."</p>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Une Expérience Amusante
+                                    et Éducative</h3>
+                                <p class="my-4">Ce qui distingue ce gym et les autres, c'est la qualité technique des
+                                    cours. Chaque session est une opportunité d'apprendre quelque chose de nouveau, même
+                                    pour les pratiquants plus avancés. J'ai vraiment senti une progression dans mon
+                                    Jiu-Jitsu depuis que j'ai rejoint cette école."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-3.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-3.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Marc Beltran</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Mars 2022</div>
@@ -570,14 +612,15 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Environnement pour Grandir et S'épanouir
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Environnement pour
+                                    Grandir et S'épanouir
                                 </h3>
-                                <p class="my-4">"Je suis impressionné par le niveau d'hygiène maintenu au gym. Les tapis et les équipements sont toujours impeccablement propres, et il y a un vrai souci pour la sécurité des membres. Cela me donne une grande tranquillité d'esprit."</p>
+                                <p class="my-4">"Je suis impressionné par le niveau d'hygiène maintenu au gym. Les tapis
+                                    et les équipements sont toujours impeccablement propres, et il y a un vrai souci
+                                    pour la sécurité des membres. Cela me donne une grande tranquillité d'esprit."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-2.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-2.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Isabelle Tanguay</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Avril 2024
@@ -588,14 +631,16 @@
                         <figure
                             class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Endroit Parfait pour Apprendre et S'amuser
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Un Endroit Parfait pour
+                                    Apprendre et S'amuser
                                 </h3>
-                                <p class="my-4">"C'est un environnement amusant et accueillant où tout le monde se sent à l'aise, peu importe son niveau. Les entraînements sont sérieux, mais on sait aussi comment passer un bon moment. C'est vraiment l'endroit parfait pour s'entraîner tout en se divertissant."</p>
+                                <p class="my-4">"C'est un environnement amusant et accueillant où tout le monde se sent
+                                    à l'aise, peu importe son niveau. Les entraînements sont sérieux, mais on sait aussi
+                                    comment passer un bon moment. C'est vraiment l'endroit parfait pour s'entraîner tout
+                                    en se divertissant."</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center ">
-                                <img class="rounded-full w-9 h-9"
-                                    src="img/portrait-4.png"
-                                    alt="profile picture">
+                                <img class="rounded-full w-9 h-9" src="img/portrait-4.png" alt="profile picture">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Olivier Martin</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Septembre 2023</div>
@@ -611,8 +656,8 @@
 
     <footer class="bg-white dark:bg-gray-800  ">
         <div class="container shadow w-full mx-auto md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="https://github.com/Big-pun"
-                    class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a
+                    href="https://github.com/Big-pun" class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-300 sm:mt-0">
                 <li>

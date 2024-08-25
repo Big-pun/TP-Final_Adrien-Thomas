@@ -12,17 +12,16 @@
 
 <body class="bg-green-800">
     <header class="container mb-36">
-    <nav class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
-            <h1>
-                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
-                </a>
-            </h1>
-            <div>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <nav class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
+                <h1>
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
+                    </a>
+                </h1>
+                <div class="flex md:order-2 space-x-3 items-center md:space-x-0 rtl:space-x-reverse">
                     <button data-collapse-toggle="navbar-sticky" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 self-center"
                         aria-controls="navbar-sticky" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -59,7 +58,7 @@
                                 </svg></button>
                             <!-- Dropdown menu -->
                             <div id="dropdownNavbar"
-                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                class="z-10 hidden absolute font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
@@ -84,8 +83,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
     <section>
@@ -97,7 +95,8 @@
                     <div class="flex flex-col items-center text-center">
                         <h2
                             class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">
-                            <span class="text-green-700">Initiation</span> au BJJ</h2>
+                            <span class="text-green-700">Initiation</span> au BJJ
+                        </h2>
                         <h3 class="text-3xl font-bold text-gray-800 dark:text-white mb-4">Prochain début de programme
                             le<br /><span class="text-green-700" id="nextIntroDate"></span></h3>
                         <p class="text-gray-700 dark:text-gray-300 mb-4">Notre programme de 4 semaines est désigné pour
@@ -244,7 +243,8 @@
             <div class="grid grid-cols-12 p-8">
                 <div class="col-span-12 sm:col-start-3 sm:col-span-8 flex flex-col gap-4">
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Equipement</h2>
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Equipement
+                        </h2>
                         <p class="text-gray-600 dark:text-gray-400">
                             Il est recommandé de porter des vêtements de sport confortables, tels que des leggings et/ou
                             shorts et des t-shirts, sans-manches à éviter. Le retrait des bijoux tels que piercings et
@@ -253,16 +253,20 @@
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Groupe</h2>
-                        <p class="text-gray-600 dark:text-gray-400">Nous sommes prets a accueillir de nouveaux groupes ou participants solo
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Groupe
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-400">Nous sommes prets a accueillir de nouveaux groupes
+                            ou participants solo
                             au debut de chaque mois. Nous suivons un programme précis qui ne nous permet pas
                             d'acceuillir de participants en cours de programme.</p>
                     </div>
 
                     <div class="flex flex-col items-center text-center">
-                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Qu'est-ce que vous
+                        <h2 class="text-4xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">Qu'est-ce
+                            que vous
                             apprendrez?</h2>
-                        <p class="text-gray-600 dark:text-gray-400">Vous apprendrez les techniques de base du jiu-jitsu brésilien, y
+                        <p class="text-gray-600 dark:text-gray-400">Vous apprendrez les techniques de base du jiu-jitsu
+                            brésilien, y
                             compris
                             les positions, les soumissions et les échappatoires. Vous apprendrez également les règles et
                             les stratégies qui vous permettront de progresser rapidement.</p>
@@ -391,8 +395,8 @@
 
     <footer class="bg-white dark:bg-gray-800  ">
         <div class="container shadow w-full mx-auto md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="https://github.com/Big-pun"
-                    class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a
+                    href="https://github.com/Big-pun" class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-300 sm:mt-0">
                 <li>
