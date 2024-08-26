@@ -161,27 +161,30 @@
                                 <div class="inline-block text-gray-700 dark:text-gray-300">Comment
                                     avez-vous
                                     entendu parler du gym ?</div>
-                                <div class="flex flex-row justify-around source-control">
-                                    <div class="flex items-center mb-4 ">
-                                        <input id="radio-amis" type="radio" value="amis" name="source"
-                                            class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="radio-amis"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            Amis</label>
-                                    </div>
-                                    <div class="flex items-center mb-4">
-                                        <input id="radio-reseaux" type="radio" value="reseaux" name="source"
-                                            class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="radio-reseaux"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Réseaux
-                                            sociaux</label>
-                                    </div>
-                                    <div class="flex items-center mb-4">
-                                        <input id="radio-publicite" type="radio" value="publicite" name="source"
-                                            class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="radio-publicite"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Publicité</label>
-                                    </div>
+                                <div class="source-control">
+                                    <fieldset class="flex flex-row justify-around border border-gray-200 rounded-lg ">
+                                        <legend class="text-gray-800 dark:text-gray-300">Faites un choix</legend>
+                                        <div class="flex items-center mb-4 ">
+                                            <input id="radio-amis" type="radio" value="amis" name="source"
+                                                class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="radio-amis"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                Amis</label>
+                                        </div>
+                                        <div class="flex items-center mb-4">
+                                            <input id="radio-reseaux" type="radio" value="reseaux" name="source"
+                                                class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="radio-reseaux"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Réseaux
+                                                sociaux</label>
+                                        </div>
+                                        <div class="flex items-center mb-4">
+                                            <input id="radio-publicite" type="radio" value="publicite" name="source"
+                                                class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                            <label for="radio-publicite"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Publicité</label>
+                                        </div>
+                                    </fieldset>
                                 </div>
                                 <div class="errorMessage text-red-600"></div>
                             </div>
@@ -189,7 +192,9 @@
                             <div class="col-span-12 ">
                                 <div class="inline-block text-gray-700 dark:text-gray-300">Êtes vous
                                     étudiant?</div>
-                                <div class="flex flex-row justify-center etudiant-control">
+                                <div class=" etudiant-control">
+                                    <fieldset class="flex flex-row justify-center border border-gray-200 rounded-lg ">
+                                        <legend class="text-gray-800 dark:text-gray-300">Faites un choix</legend>
                                     <div class="flex items-center m-4">
                                         <input id="etudiant-oui" type="radio" value="oui" name="etudiant"
                                             class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
@@ -216,7 +221,8 @@
                                         <div
                                             class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600">
                                         </div>
-                                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">J'accepte
+                                        <span
+                                            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">J'accepte
                                             de
                                             recevoir des messages texte du gym</span>
                                     </div>
@@ -317,7 +323,7 @@
                             <figcaption class="flex items-center justify-center ">
                                 <img class="rounded-full w-9 h-9"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
-                                    alt="profile picture">
+                                    alt="Photo de Bonnie ">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Bonnie Green</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400 ">Janvier 2023</div>
@@ -336,7 +342,7 @@
                             <figcaption class="flex items-center justify-center ">
                                 <img class="rounded-full w-9 h-9"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
-                                    alt="profile picture">
+                                    alt="Photo de Roberta">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Roberta Casas</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Juin 2022</div>
@@ -356,7 +362,7 @@
                             <figcaption class="flex items-center justify-center ">
                                 <img class="rounded-full w-9 h-9"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                                    alt="profile picture">
+                                    alt="Photo de Jese">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Jese Leos</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Juillet 2024
@@ -377,7 +383,7 @@
                             <figcaption class="flex items-center justify-center ">
                                 <img class="rounded-full w-9 h-9"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
-                                    alt="profile picture">
+                                    alt="Photo de Joseph">
                                 <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                                     <div>Joseph McFall</div>
                                     <div class="text-sm text-gray-500 dark:text-gray-400">Novembre 2023</div>

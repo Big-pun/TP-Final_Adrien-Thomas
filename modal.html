@@ -12,7 +12,7 @@
             <form id="inscriptionForm" onsubmit="return validateForm()" novalidate
                 class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center p-6">
                 <h2 class="text-xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">Apprenez le BJJ, inscrivez vous
-                    aujourd"hui</h2>
+                    aujourd'hui</h2>
                 <div class="grid grid-cols-12 gap-4">
 
                     <div class="col-span-12 sm:col-span-6 input-control">
@@ -60,42 +60,48 @@
                     </div>
 
                     <div class="col-span-12 ">
-                        <label for="source" class="inline-block text-gray-900 dark:text-gray-300">Comment
+                        <div class="inline-block text-gray-700 dark:text-gray-300">Comment
                             avez-vous
-                            entendu parler du gym ?</label>
-                        <div class="flex flex-row justify-between source-control">
-                            <div class="flex items-center mb-4 ">
-                                <input id="radio-amis" type="radio" value="amis" name="source"
-                                    class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="radio-amis"
-                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Amis</label>
-                            </div>
-                            <div class="flex items-center mb-4">
-                                <input id="radio-reseaux" type="radio" value="reseaux" name="source"
-                                    class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="radio-reseaux"
-                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Réseaux
-                                    sociaux</label>
-                            </div>
-                            <div class="flex items-center mb-4">
-                                <input id="radio-publicite" type="radio" value="publicite" name="source"
-                                    class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="radio-publicite"
-                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Publicité</label>
-                            </div>
+                            entendu parler du gym ?</div>
+                        <div class="source-control">
+                            <fieldset class="flex flex-row justify-around border border-gray-200 rounded-lg ">
+                                <legend class="text-gray-800 dark:text-gray-300">Faites un choix</legend>
+                                <div class="flex items-center mb-4 ">
+                                    <input id="radio-amis" type="radio" value="amis" name="source"
+                                        class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="radio-amis"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                        Amis</label>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <input id="radio-reseaux" type="radio" value="reseaux" name="source"
+                                        class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="radio-reseaux"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Réseaux
+                                        sociaux</label>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <input id="radio-publicite" type="radio" value="publicite" name="source"
+                                        class="w-4 h-4 accent-green-700 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="radio-publicite"
+                                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Publicité</label>
+                                </div>
+                            </fieldset>
                         </div>
                         <div class="errorMessage text-red-600"></div>
                     </div>
 
                     <div class="col-span-12 ">
-                        <label for="etudiant" class="inline-block text-gray-900 dark:text-gray-300 ">Etes vous
-                            étudiant?</label>
-                        <div class="flex flex-row justify-center etudiant-control">
-                            <div class="flex items-center m-4 ">
+                        <div class="inline-block text-gray-700 dark:text-gray-300">Êtes vous
+                            étudiant?</div>
+                        <div class=" etudiant-control">
+                            <fieldset class="flex flex-row justify-center border border-gray-200 rounded-lg ">
+                                <legend class="text-gray-800 dark:text-gray-300">Faites un choix</legend>
+                            <div class="flex items-center m-4">
                                 <input id="etudiant-oui" type="radio" value="oui" name="etudiant"
                                     class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
                                 <label for="etudiant-oui"
-                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 ">Oui</label>
+                                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Oui</label>
                             </div>
 
                             <div class="flex items-center m-4">
