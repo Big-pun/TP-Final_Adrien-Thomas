@@ -88,9 +88,9 @@
 
     <section>
         <div class="container mx-auto">
-            <div class="grid grid-cols-12 p-8 py-12">
+            <div class="grid grid-cols-12 sm:p-8 py-12">
                 <div
-                    class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    class="col-span-12 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                     <!-- Text Section -->
                     <div class="flex flex-col items-center text-center">
                         <h2
@@ -195,20 +195,20 @@
                                 <div class=" etudiant-control">
                                     <fieldset class="flex flex-row justify-center border border-gray-200 rounded-lg ">
                                         <legend class="text-gray-800 dark:text-gray-300">Faites un choix</legend>
-                                    <div class="flex items-center m-4">
-                                        <input id="etudiant-oui" type="radio" value="oui" name="etudiant"
-                                            class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
-                                        <label for="etudiant-oui"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Oui</label>
-                                    </div>
+                                        <div class="flex items-center m-4">
+                                            <input id="etudiant-oui" type="radio" value="oui" name="etudiant"
+                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
+                                            <label for="etudiant-oui"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Oui</label>
+                                        </div>
 
-                                    <div class="flex items-center m-4">
-                                        <input id="etudiant-non" type="radio" value="non" name="etudiant"
-                                            class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
+                                        <div class="flex items-center m-4">
+                                            <input id="etudiant-non" type="radio" value="non" name="etudiant"
+                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 accent-green-700">
 
-                                        <label for="etudiant-non"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Non</label>
-                                    </div>
+                                            <label for="etudiant-non"
+                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Non</label>
+                                        </div>
                                 </div>
                                 <div class="errorMessage text-red-600"></div>
                             </div>
@@ -285,18 +285,18 @@
     <!-- Videos section -->
     <section>
         <div class="container mx-auto">
-            <div class="grid grid-cols-12 m-8 mt-16">
-                <div class="col-span-12 flex flex-col lg:flex-row gap-8 justify-center items-center">
-                    <div>
-                        <iframe class="rounded-lg shadow-lg" width="560" height="315"
+            <div class="grid grid-cols-12 sm:p-8">
+                <div class="col-span-12 grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div class="flex justify-center items-center">
+                        <iframe class="rounded-lg shadow-lg w-full h-64 md:h-80 lg:h-96"
                             src="https://www.youtube.com/embed/ljVpQ380ACs?si=wKqUWkXCTO3x6rZ1"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
-                    <div>
-                        <iframe class="rounded-lg shadow-lg" width="560" height="315"
+                    <div class="flex justify-center items-center">
+                        <iframe class="rounded-lg shadow-lg w-full h-64 md:h-80 lg:h-96"
                             src="https://www.youtube.com/embed/L7EomWW1fIw?si=jx8F72zOM3CERxRO"
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
