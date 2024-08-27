@@ -10,7 +10,7 @@ function updateStopBeforeEnd() {
     if (window.matchMedia("(min-width: 1024px)").matches) {
         stopBeforeEnd = 3;
     } else if (window.matchMedia("(min-width: 768px)").matches) {
-        stopBeforeEnd = 2;
+        stopBeforeEnd = 1;
     } else {
         stopBeforeEnd = 0;
     }
