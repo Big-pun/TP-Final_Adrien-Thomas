@@ -8,7 +8,7 @@ let stopBeforeEnd = 0;
 
 function updateStopBeforeEnd() {
     if (window.matchMedia("(min-width: 1024px)").matches) {
-        stopBeforeEnd = 2;
+        stopBeforeEnd = 3;
     } else if (window.matchMedia("(min-width: 768px)").matches) {
         stopBeforeEnd = 2;
     } else {
