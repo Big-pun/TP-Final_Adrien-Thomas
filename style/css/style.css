@@ -1,22 +1,29 @@
-form .input-control.success input {
+.input-control.success input,
+.input-control.success textarea,
+.input-control.success select {
   border: 2px solid #00ff00;
 }
-form .input-control.error input {
+.input-control.error input,
+.input-control.error textarea,
+.input-control.error select {
   border: 2px solid #ff0000;
 }
-form .condition-control.success {
+
+.source-control.error,
+.etudiant-control.error,
+.condition-control.error {
+  border: 2px solid #ff0000;
+}
+.source-control.success,
+.etudiant-control.success,
+.condition-control.success {
   border: 2px solid #00ff00;
 }
-form .condition-control.error {
-  border: 2px solid #ff0000;
-}
-form .etudiant-control.success,
-form .source-control.success {
-  border: 2px solid #00ff00;
-}
-form .etudiant-control.error,
-form .source-control.error {
-  border: 2px solid #ff0000;
+
+.errorMessage {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
 }
 
 /* Global styles */
@@ -37,21 +44,6 @@ form .source-control.error {
 #slider {
   display: flex;
   transition: transform 0.5s ease;
-}
-
-.input-control.error input,
-.input-control.error textarea {
-  border: 2px solid #ff0000;
-}
-.input-control.success input,
-.input-control.success textarea {
-  border: 2px solid #00ff00;
-}
-
-.errorMessage {
-  color: red;
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
 }
 
 .headcoach__background {

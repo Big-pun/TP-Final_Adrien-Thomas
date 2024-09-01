@@ -85,9 +85,11 @@ const validateForm = () => {
 
     if (genre === '') {
         setErrorFor(genreInput, 'Le genre est requis');
+        
         noErrors = false;
     } else {
         setSuccessFor(genreInput);
+
         console.log('genre:', genre);
     }
 
@@ -132,7 +134,6 @@ const validateForm = () => {
         setErrorFor(conditionContainer, 'Vous devez accepter la condition');
         (conditionContainer).classList.remove('success');
         (conditionContainer).classList.add('error');
-
         noErrors = false;
     } else {
         setSuccessFor(conditionContainer);

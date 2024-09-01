@@ -1,36 +1,39 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
-form {
-    .input-control {
-        &.success input {
-            @include border-success;
-        }
+// forms.scss
 
-        &.error input {
-            @include border-error;
-        }
+.input-control {
+  &.success {
+    input,
+    textarea,
+    select {
+      border: 2px solid $border-color_1;
     }
+  }
 
-    .condition-control {
-        &.success {
-            @include border-success;
-        }
-
-        &.error {
-            @include border-error;
-        }
+  &.error {
+    input,
+    textarea,
+    select {
+      border: 2px solid $border-color_2;
     }
-
-    .etudiant-control,
-    .source-control {
-        &.success {
-            @include border-success;
-        }
-
-        &.error {
-            @include border-error;
-        }
-    }
+  }
 }
 
+.source-control,
+.etudiant-control,
+.condition-control {
+  &.error {
+    border: 2px solid $border-color_2;
+  }
+  &.success {
+    border: 2px solid $border-color_1;
+  }
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
