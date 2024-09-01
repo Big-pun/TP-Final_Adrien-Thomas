@@ -25,18 +25,22 @@ function updateProgressBar() {
 
 function goNext() {
     if (currentIndex < totalItems - 1 - stopBeforeEnd) {
-        currentIndex = (currentIndex + 1) % totalItems;
-        slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
-        updateProgressBar();
+        currentIndex++;
+    } else {
+        currentIndex = 0; // Revenir au début
     }
+    slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
+    updateProgressBar();
 }
 
 function goPrev() {
     if (currentIndex > 0) {
-        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-        slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
-        updateProgressBar();
+        currentIndex--;
+    } else {
+        currentIndex = totalItems - 1 - stopBeforeEnd; // Revenir à la fin
     }
+    slider.style.transform = "translateX(" + (-currentIndex * itemWidth) + "px)";
+    updateProgressBar();
 }
 
 document.getElementById("next").addEventListener("click", goNext);
