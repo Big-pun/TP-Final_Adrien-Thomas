@@ -1,73 +1,26 @@
-.headcoach_background {
-    background-image: url(../../img/headcoach.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+// style.scss
+@import 'variables';
+@import 'mixins';
+@import 'forms';
 
-    @media (max-width: 768px) {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
-        
-    }
-    
-}
-
-.glide__arrow {
-    position: absolute;
-    display: block;
-    top: 50%;
-    z-index: 2;
-    opacity: 1;
-    transform: translateY(-50%);
-}
-
-#slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
+/* Global styles */
 .slide {
     min-width: 100%; /* Chaque slide occupe 100% de la largeur du conteneur */
     box-sizing: border-box;
 }
 
-$border-color_1: #00ff00;
-$border-color_2: #ff0000;
+.input-control.error input,
+.input-control.error textarea {
+    border-color: red;
+}
 
-form {
-    .input-control
-     {
-        &.success input {
-            border: 2px solid $border-color_1;
-        }
+.input-control.success input,
+.input-control.success textarea {
+    border-color: green;
+}
 
-        &.error input {
-            border: 2px solid $border-color_2;
-        }
-    }
-    .condition-control
-    {
-        &.success {
-            border: 2px solid $border-color_1;
-        }
-
-        &.error {
-            border: 2px solid $border-color_2;
-        }
-    }
-    .etudiant-control,
-    .source-control
-    { 
-        &.success{
-            border: 2px solid $border-color_1;
-        }
-
-        &.error {
-            border: 2px solid $border-color_2;
-        }
-    }
-
-    
+.errorMessage {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
 }

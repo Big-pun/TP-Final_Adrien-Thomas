@@ -1,0 +1,7 @@
+@mixin border-success {
+    border: 2px solid $border-color_1;
+}
+
+@mixin border-error {
+    border: 2px solid $border-color_2;
+}

@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'mixins';
+
+form {
+    .input-control {
+        &.success input {
+            @include border-success;
+        }
+
+        &.error input {
+            @include border-error;
+        }
+    }
+
+    .condition-control {
+        &.success {
+            @include border-success;
+        }
+
+        &.error {
+            @include border-error;
+        }
+    }
+
+    .etudiant-control,
+    .source-control {
+        &.success {
+            @include border-success;
+        }
+
+        &.error {
+            @include border-error;
+        }
+    }
+}

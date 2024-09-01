@@ -18,25 +18,3 @@ form .etudiant-control.error,
 form .source-control.error {
   border: 2px solid #ff0000;
 }
-
-/* Global styles */
-.slide {
-  min-width: 100%; /* Chaque slide occupe 100% de la largeur du conteneur */
-  box-sizing: border-box;
-}
-
-.input-control.error input,
-.input-control.error textarea {
-  border-color: red;
-}
-
-.input-control.success input,
-.input-control.success textarea {
-  border-color: green;
-}
-
-.errorMessage {
-  color: red;
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
-}
