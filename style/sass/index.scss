@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+/* Carousel */
+.slide {
+  min-width: 100%; /* Chaque slide occupe 100% de la largeur du conteneur */
+  box-sizing: border-box;
+}
+
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+#slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Coach background */
+
+.headcoach__background {
+  background-image: url(../../img/headcoach.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    background-position: center;
+  }
+}
