@@ -1,3 +1,6 @@
+@import 'variables';
+
+
 @mixin border-success {
     border: 2px solid $border-color_1;
 }
