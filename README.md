@@ -26,4 +26,6 @@ Distribué sous la licence MIT.
 
 Adrien Thomas - adrienthomas419@gmail.com
 
-Lien du projet : [https://github.com/votre-utilisateur/votre-projet](https://github.com/votre-utilisateur/votre-projet)
+Liens du projet : 
+    Site : [https://big-pun.github.io/TP-Final_Adrien-Thomas/](https://big-pun.github.io/TP-Final_Adrien-Thomas/)
+    Repo : [https://github.com/Big-pun/TP-Final_Adrien-Thomas](https://github.com/Big-pun/TP-Final_Adrien-Thomas)
