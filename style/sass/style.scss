@@ -37,25 +37,37 @@ $border-color_1: #00ff00;
 $border-color_2: #ff0000;
 
 form {
+    .input-control
+     {
+        &.success input {
+            border: 2px solid $border-color_1;
+        }
 
-    .errorMessage {
-        color: $color_6;
-        font-size: 1vw;
-        height: 13px;
+        &.error input {
+            border: 2px solid $border-color_2;
+        }
+    }
+    .condition-control
+    {
+        &.success {
+            border: 2px solid $border-color_1;
+        }
+
+        &.error {
+            border: 2px solid $border-color_2;
+        }
+    }
+    .etudiant-control,
+    .source-control
+    { 
+        &.success{
+            border: 2px solid $border-color_1;
+        }
+
+        &.error {
+            border: 2px solid $border-color_2;
+        }
     }
 
     
-    &.success {
-        input {
-            border: 2px;
-            border-color: $border-color_1;
-        }
-    }
-
-    &.error {
-        input {
-            border: 2px;
-            border-color: $border-color_2;
-        }
-    }
 }

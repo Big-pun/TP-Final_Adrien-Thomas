@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Rolling Stoners</title>
+</head>
+
+<body class="bg-white dark:bg-gray-800">
+    <header class="container mb-36">
+        <nav class="bg-white dark:bg-gray-800 fixed w-full z-50 top-0 start-0">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="./img/logo.png" class="w-36" alt="Logo de The Rolling Stoners">
+                    </a>
+                </div>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="text-2xl flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:md:bg-gray-800">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="horaire.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Horaire</a>
+                        </li>
+                        <li>
+                            <a href="initiation.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Initiation
+                                au BJJ</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-700 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto md:dark:hover:text-green-700 dark:focus:text-gray-700 dark:border-gray-700 dark:hover:bg-gray-100 md:dark:hover:bg-transparent">Abonnements
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden absolute font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 dark">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownNavbar">
+                                    <li>
+                                        <a href="abonnements-adulte.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Adultes</a>
+                                    </li>
+                                    <li>
+                                        <a href="abonnements-enfants.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enfants</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="equipe.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Équipe</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html"
+                                class="block py-2 px-3 text-gray-900 dark:text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-green-800">
+            <div class="container mx-auto sm:p-8 py-12">
+                <div class="grid grid-cols-12">
+                    <div
+                        class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-span-6 lg:col-start-4 items-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <!-- Text Section -->
+                        <div class="flex flex-col items-center text-center">
+                            <h2
+                                class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white mb-4">
+                                Félicitations, votre <span class="text-green-700 dark:text-green-600">Abonnement</span> est confirmé !</h2>
+                            <p class="text-gray-600 dark:text-gray-400 mb-6">Nous sommes ravis de vous accueillir dans notre communauté ! Vous allez recevoir de nos nouvelles bientot.</p>
+                            <a href="index.html"
+                                class=" bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Retour a l'Accueil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="container w-full mx-auto md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-400 sm:text-center">© 2024 <a
+                    href="https://github.com/Big-pun" class="hover:underline">Adrien Thomas</a>. Tous droits réservés.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-300 sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">A propos</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Clause de confidentialité</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">License</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./scripts/navbar.js"></script>
+
+</body>
+</html>
+

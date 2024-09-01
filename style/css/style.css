@@ -30,3 +30,24 @@
   min-width: 100%; /* Chaque slide occupe 100% de la largeur du conteneur */
   box-sizing: border-box;
 }
+
+form .input-control.success input {
+  border: 2px solid #00ff00;
+}
+form .input-control.error input {
+  border: 2px solid #ff0000;
+}
+form .condition-control.success {
+  border: 2px solid #00ff00;
+}
+form .condition-control.error {
+  border: 2px solid #ff0000;
+}
+form .etudiant-control.success,
+form .source-control.success {
+  border: 2px solid #00ff00;
+}
+form .etudiant-control.error,
+form .source-control.error {
+  border: 2px solid #ff0000;
+}

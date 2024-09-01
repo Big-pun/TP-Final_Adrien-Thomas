@@ -95,9 +95,13 @@ const validateForm = () => {
     const sourceContainer = document.querySelector('.source-control');
     if (!sourceChecked) {
         setErrorFor(sourceContainer, 'Vous devez choisir une source');
+        (sourceContainer).classList.remove('success');
+        (sourceContainer).classList.add('error');
         noErrors = false;
     } else {
         setSuccessFor(sourceContainer);
+        (sourceContainer).classList.remove('error');
+        (sourceContainer).classList.add('success');
         console.log('source:', document.querySelector('input[name="source"]:checked').value);
     }
 
@@ -110,9 +114,15 @@ const validateForm = () => {
 
     if (!etudiantChecked) {
         setErrorFor(document.querySelector('.etudiant-control'), 'Vous devez choisir une option');
+        (document.querySelector('.etudiant-control')).classList.remove('success');
+        (document.querySelector('.etudiant-control')).classList.add('error');
+
         noErrors = false;
     } else {
         setSuccessFor(document.querySelector('.etudiant-control'));
+        (document.querySelector('.etudiant-control')).classList.remove('error');
+        (document.querySelector('.etudiant-control')).classList.add('success');
+
         console.log('étudiant:', document.querySelector('input[name="etudiant"]:checked').value);
     }
 
@@ -120,9 +130,14 @@ const validateForm = () => {
     const conditionContainer = document.querySelector('.condition-control');
     if (!condition) {
         setErrorFor(conditionContainer, 'Vous devez accepter la condition');
+        (conditionContainer).classList.remove('success');
+        (conditionContainer).classList.add('error');
+
         noErrors = false;
     } else {
         setSuccessFor(conditionContainer);
+        (conditionContainer).classList.remove('error');
+        (conditionContainer).classList.add('success');
         console.log('condition:', condition);
     }
 
@@ -164,6 +179,7 @@ addEventListener('load', () => {
         console.log('submit');
         if (validateForm()) {
             form.submit();
+            window.location.href = 'confirmation.html';
         }
     }
     );
