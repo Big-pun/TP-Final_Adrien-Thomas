@@ -25,18 +25,44 @@ form .source-control.error {
   box-sizing: border-box;
 }
 
-.input-control.error input,
-.input-control.error textarea {
-  border-color: red;
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(-50%);
 }
 
+#slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.input-control.error input,
+.input-control.error textarea {
+  border: 2px solid #ff0000;
+}
 .input-control.success input,
 .input-control.success textarea {
-  border-color: green;
+  border: 2px solid #00ff00;
 }
 
 .errorMessage {
   color: red;
   font-size: 0.875rem;
   margin-top: 0.25rem;
+}
+
+.headcoach__background {
+  background-image: url(../../img/headcoach.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .headcoach__background {
+    background-position: center;
+  }
 }
