@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form');
+    const form = document.getElementById('form-msg');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
 
