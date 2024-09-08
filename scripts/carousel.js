@@ -3,7 +3,7 @@ const slider = document.getElementById("slider");
 const progressBar = document.getElementById('progress-bar');
 const items = slider.children;
 const totalItems = items.length;
-const itemWidth = items[0].offsetWidth;
+const itemWidth = items[0].offsetWidth + 32; // 32px de gap
 let stopBeforeEnd = 0;
 
 function updateStopBeforeEnd() {
